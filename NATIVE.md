@@ -1,4 +1,4 @@
-# Facet
+# Qbing
 
 The native clients live in `native/`: Rust/eframe with native BlueZ on Linux, and Kotlin/Compose with Android GATT on Android. Neither UI uses a browser or WebView. The existing web client remains available, with its history unchanged.
 
@@ -45,7 +45,7 @@ csTimer retains its GPLv3 notices. Existing native protocol/analysis sources wer
 
 ## Current native interactions
 
-The desktop header's **Companion** action enables the native GNOME Shell top-bar item through the Shell extension service. The optional **Floating companion** desktop action, or `facet --floating-companion`, opens a detached 210 × 58 native window sharing the main application's Bluetooth connection. It stays above other windows and retains the existing `cstimer-companion` Forge floating rule. The companion shows the latest solve (independent of history selection), TPS and HTM move count, with live metrics during a solve. Double turns count as one move. The scramble fits two compact rows. `facet-companion` and `facet --companion` request the GNOME panel item from the running Rust app. A floating window is only requested explicitly with `--floating-companion`. Both reuse the running app and Bluetooth connection.
+The desktop header's **Companion** action enables the native GNOME Shell top-bar item through the Shell extension service. The optional **Floating companion** desktop action, or `qbing --floating-companion`, opens a detached 210 × 58 native window sharing the main application's Bluetooth connection. It stays above other windows and retains the existing `cstimer-companion` Forge floating rule. The companion shows the latest solve (independent of history selection), TPS and HTM move count, with live metrics during a solve. Double turns count as one move. The scramble fits two compact rows. `qbing-companion` and `qbing --companion` request the GNOME panel item from the running Rust app. A floating window is only requested explicitly with `--floating-companion`. Both reuse the running app and Bluetooth connection.
 
 The installer also supplies `cstimer-companion@local`, a GNOME Shell 50 extension. It uses spare space on the left of the top bar without displacing the centered clock, showing a connection dot, time, TPS, moves and the remaining scramble. When space is tight, the scramble contracts; the dropdown retains the full scramble and metrics plus actions to open the timer or floating companion. The main Rust app must stay running; it can be minimized. Session D-Bus transfers only the displayed metrics and scramble, with no additional Bluetooth connection. A newly installed extension requires one logout/login before GNOME discovers it. Enable it with `gnome-extensions enable cstimer-companion@local`; disable it with the corresponding `disable` command. Nix home configuration retains its enabled state.
 
@@ -93,9 +93,9 @@ The left session rail labels Mean once in the Best/Mean summary. Its pace chart 
 
 `native/assets/app-icon/` contains the original vector cube mark and desktop PNG exports. `node scripts/generate-app-icon.mjs` produces desktop SVG/PNG and Android vector foregrounds from the same geometry. Linux installs SVG plus 32–512px raster sizes; native windows share a cached bundled 256px icon. Android uses an adaptive foreground within its safe region and a separate monochrome layer on Android 13+. No external brand logo or font is used in this icon.
 
-## Facet branding
+## Qbing branding
 
-Facet is the visible name of the native app, its desktop entries and companion, Android launcher, and GNOME panel extension. `facet` and `facet-companion` are friendly launch commands. Existing application IDs, storage locations, session-bus names and compatibility launchers are retained so upgrades keep history, settings, favorites and Forge rules. Upstream csTimer attribution and backup-format names remain accurate. The current mark is the three-facet F in `native/assets/app-icon/facet.svg`; the icon generator exports desktop PNGs and Android adaptive/monochrome layers from those paths.
+Qbing is the visible name of the native app, its desktop entries and companion, Android launcher, and GNOME panel extension. `qbing` and `qbing-companion` are friendly launch commands. Existing application IDs, storage locations, session-bus names and compatibility launchers are retained so upgrades keep history, settings, favorites and Forge rules. Upstream csTimer attribution and backup-format names remain accurate. The current mark is the three-qbing F in `native/assets/app-icon/qbing.svg`; the icon generator exports desktop PNGs and Android adaptive/monochrome layers from those paths.
 
 ## Row averages and compact labels
 
@@ -142,27 +142,27 @@ the saved solve and pending upload, refreshes statistics, and clears a deleted
 latest result. A configured server must acknowledge deletion before local removal;
 Android serializes deletion with sync to prevent stale uploads restoring a solve.
 
-Facet background service (GNOME/Linux): the installer enables the user unit
-`facet.service` on `graphical-session.target`. `facet` opens the existing timer;
-`facet-companion` activates its GNOME panel item. The service starts with the
+Qbing background service (GNOME/Linux): the installer enables the user unit
+`qbing.service` on `graphical-session.target`. `qbing` opens the existing timer;
+`qbing-companion` activates its GNOME panel item. The service starts with the
 main window hidden. Closing the window hides it while the same process keeps Bluetooth tracking, timing, recording and
 panel snapshots alive. Hidden mode
-skips dashboard rendering. `facet --hide` hides the window explicitly;
-`systemctl --user stop facet.service` exits through the normal shutdown path.
+skips dashboard rendering. `qbing --hide` hides the window explicitly;
+`systemctl --user stop qbing.service` exits through the normal shutdown path.
 It requires a graphical login, and does not enable system-wide lingering.
 
 A newly installed local GNOME extension may not exist in an already-running
 Shell's extension registry. GNOME 50's ReloadExtension API is deprecated and
 cannot discover it. The installer preserves other extensions and enables the
-Facet UUID for the next login. In this situation one sign-out/sign-in is needed;
+Qbing UUID for the next login. In this situation one sign-out/sign-in is needed;
 the installer never restarts Shell, logs out the user, or enables unsafe mode.
 
-To stop Facet completely, use Settings → Quit Facet, Ctrl+Q, the GNOME
-companion's Quit menu item, `facet --quit`, or
-`systemctl --user stop facet.service`. The in-app header ×, system window close, and Alt+F4 hide the main window and keep the companion running.
+To stop Qbing completely, use Settings → Quit Qbing, Ctrl+Q, the GNOME
+companion's Quit menu item, `qbing --quit`, or
+`systemctl --user stop qbing.service`. The in-app header ×, system window close, and Alt+F4 hide the main window and keep the companion running.
 Use Keep in background (Settings or the panel) to hide it explicitly. Clean Quit exits normally and is not restarted by
 systemd's on-failure policy. To turn off login startup too, run
-`systemctl --user disable --now facet.service`.
+`systemctl --user disable --now qbing.service`.
 
 Solve review uses the same compact composition in Rust and Compose: a metric
 header, persistent cube/playhead with four CFOP rows, and Moves / Analysis tabs. The scramble is directly visible in Analysis. Move chips retain elapsed timestamps and seek to recorded events,
@@ -236,7 +236,7 @@ cube, cancel a connection attempt, disconnect, and turn Bluetooth on. Commands
 are queued to the existing Rust model; the extension never opens its own BLE
 connection. Discovery IDs are opaque and resolved against current discovery or
 the saved cube, with no MAC address in the panel snapshot. If the service has
-been quit, Connect cube starts facet.service in the background first. Connection
+been quit, Connect cube starts qbing.service in the background first. Connection
 controls need both the updated Rust binary and the updated Shell extension.
 
 The private Wayland test also sends real compositor window-close requests,

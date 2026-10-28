@@ -74,7 +74,7 @@ fn main() -> eframe::Result {
             "HideMain"
         };
         if !panel::call_existing(method) {
-            eprintln!("Facet is not running.");
+            eprintln!("Qbing is not running.");
         }
         return Ok(());
     }
@@ -94,7 +94,7 @@ fn main() -> eframe::Result {
         // the compositor withholds frame callbacks for a covered window.
         vsync: std::env::var_os("WAYLAND_DISPLAY").is_none(),
         viewport: eframe::egui::ViewportBuilder::default()
-            .with_title("Facet")
+            .with_title("Qbing")
             .with_visible(!daemon)
             .with_icon(design::app_icon())
             .with_inner_size([1440., 1000.])

@@ -105,7 +105,7 @@ export default class CubeCompanion extends Extension {
                         this._poll();
                     });
                     this._poll();
-                } catch (error) { if (!this._closed) console.warn(`Facet companion: ${error.message}`); }
+                } catch (error) { if (!this._closed) console.warn(`Qbing companion: ${error.message}`); }
             });
         this._timer = GLib.timeout_add(GLib.PRIORITY_DEFAULT, 100, () => {
             if (this._closed) return GLib.SOURCE_REMOVE;
@@ -167,7 +167,7 @@ export default class CubeCompanion extends Extension {
             this._detail.clutter_text.set_markup(detailMarkup);
             this._detailMarkup = detailMarkup;
         }
-        this._button.accessible_name = `Facet. ${s.connected ? 'Cube connected' : 'Cube disconnected'}. ${ready ? 'Scramble ready. ' : ''}${this._metricDetail.text}`;
+        this._button.accessible_name = `Qbing. ${s.connected ? 'Cube connected' : 'Cube disconnected'}. ${ready ? 'Scramble ready. ' : ''}${this._metricDetail.text}`;
         this._renderConnection();
         this._fit();
     }
@@ -235,7 +235,7 @@ export default class CubeCompanion extends Extension {
         this._powerRequested = false;
         this._renderConnection();
         try {
-            const child = Gio.Subprocess.new(['systemctl', '--user', 'start', 'facet.service'], Gio.SubprocessFlags.STDOUT_SILENCE | Gio.SubprocessFlags.STDERR_SILENCE);
+            const child = Gio.Subprocess.new(['systemctl', '--user', 'start', 'qbing.service'], Gio.SubprocessFlags.STDOUT_SILENCE | Gio.SubprocessFlags.STDERR_SILENCE);
             child.wait_check_async(this._cancel, (process, result) => {
                 if (this._closed) return;
                 this._starting = false;

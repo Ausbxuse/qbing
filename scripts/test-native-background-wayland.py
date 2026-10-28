@@ -73,7 +73,7 @@ try:
  call('ShowMain');wait(lambda s:s['windowVisible'],'show after cover closes');time.sleep(.8)
  # Exercise actual compositor close/reopen and keyboard input, not only a visibility flag.
  for _ in range(2):
-  shell_eval("global.get_window_actors().find(a=>a.meta_window.get_title()==='Facet').meta_window.delete(global.get_current_time()); true")
+  shell_eval("global.get_window_actors().find(a=>a.meta_window.get_title()==='Qbing').meta_window.delete(global.get_current_time()); true")
   wait(lambda s:not s['windowVisible'],'compositor close keeps model alive')
   call('ShowMain');wait(lambda s:s['windowVisible'],'reopen after compositor close');time.sleep(.8)
  key(True);time.sleep(.7);key(False)

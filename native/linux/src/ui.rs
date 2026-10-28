@@ -283,7 +283,7 @@ impl App {
                         if ui
                             .add(
                                 egui::Button::new(
-                                    RichText::new("Facet").font(medium(20.)).color(if solving {
+                                    RichText::new("Qbing").font(medium(20.)).color(if solving {
                                         p.faint
                                     } else {
                                         p.text
@@ -793,8 +793,8 @@ impl App {
             ui.label(RichText::new("Settings").font(medium(18.)));
             ui.with_layout(egui::Layout::right_to_left(egui::Align::Center), |ui| {
                 if ui
-                    .button(RichText::new("Quit Facet").font(medium(12.)))
-                    .on_hover_text("Ctrl+Q · stop Facet, including background tracking")
+                    .button(RichText::new("Quit Qbing").font(medium(12.)))
+                    .on_hover_text("Ctrl+Q · stop Qbing, including background tracking")
                     .clicked()
                 {
                     self.quit(ui.ctx());
@@ -907,7 +907,7 @@ impl App {
         ui.horizontal_wrapped(|ui| {
             if ui.button("Export backup").clicked()
                 && let Some(path) = rfd::FileDialog::new()
-                    .set_file_name("facet-backup.json")
+                    .set_file_name("qbing-backup.json")
                     .save_file()
             {
                 match io::atomic_write(
@@ -935,7 +935,7 @@ impl App {
         }
         ui.add_space(16.);
         ui.collapsing("About & licenses", |ui| {
-            caption(ui, "Facet · Rust / BlueZ");
+            caption(ui, "Qbing · Rust / BlueZ");
             caption(ui, "GAN protocol: gan-web-bluetooth · MIT");
             caption(ui, "Algorithms: Tao Yu / Alg-Trainer · MIT");
         });

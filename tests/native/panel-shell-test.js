@@ -12,7 +12,7 @@ export default class Test extends Extension {
    this.keyboard??=Clutter.get_default_backend().get_default_seat().create_virtual_device(Clutter.InputDeviceType.KEYBOARD_DEVICE);
    const windows=global.get_window_actors().map(actor=>actor.meta_window);
    const other=windows.find(win=>win.get_title()==='Other application');
-   const target=other??windows.find(win=>win.get_title()==='Facet');
+   const target=other??windows.find(win=>win.get_title()==='Qbing');
    if(target && (other || Main.extensionManager.lookup('cstimer-companion@local')?.stateObj?._state?.windowVisible)){Main.overview.hide();Main.activateWindow(target);}
    const file=GLib.getenv('FACET_FOCUS_REPORT');
    if(file)Gio.File.new_for_path(file).replace_contents(JSON.stringify({active:!!other&&global.display.focus_window===other,windows:windows.map(win=>win.get_title()),focus:global.display.focus_window?.get_title(),overview:Main.overview.visible}),null,false,Gio.FileCreateFlags.REPLACE_DESTINATION,null);

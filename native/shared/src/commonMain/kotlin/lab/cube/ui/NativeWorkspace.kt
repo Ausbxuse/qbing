@@ -79,7 +79,7 @@ internal fun Modifier.borderTop(color:Color)=drawBehind{drawLine(color,Offset.Ze
  BoxWithConstraints(Modifier.fillMaxWidth().height(if(mobile)88.dp else 56.dp).measureNative(".app-header").drawBehind{drawLine(edge,Offset(0f,size.height),Offset(size.width,size.height),1.dp.toPx())}){
   val showSession=maxWidth>=1180.dp
   Row(Modifier.fillMaxWidth().height(56.dp).padding(horizontal=if(mobile)16.dp else 24.dp),verticalAlignment=Alignment.CenterVertically){
-   BrandMark(18);Spacer(Modifier.width(8.dp));NativeText("Facet",weight=FontWeight.SemiBold,modifier=Modifier.clickable{c.page="Practice"})
+   BrandMark(18);Spacer(Modifier.width(8.dp));NativeText("Qbing",weight=FontWeight.SemiBold,modifier=Modifier.clickable{c.page="Practice"})
    if(!mobile){if(showSession){Spacer(Modifier.width(26.dp));NativeText(c.settings.session,color=Muted,modifier=Modifier.clickable{c.page="Settings"})}}
    Spacer(Modifier.weight(1f))
    Box(Modifier.height(if(mobile)44.dp else 32.dp).width(if(mobile)44.dp else 120.dp).clip(RoundedCornerShape(4.dp)).background(if(c.connected||mobile)Color.Transparent else Accent).clickable(role=Role.Button,onClickLabel="Connect Bluetooth cube"){c.showDevices=true;if(!c.connected&&!c.connectionBusy&&!c.adapterStatus.contains("off",true))c.scan()}.semantics{contentDescription=if(c.connected)c.deviceName else "Connect Bluetooth cube"},contentAlignment=Alignment.Center){

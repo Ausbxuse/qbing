@@ -29,7 +29,7 @@ def find(window):
  name=C.c_char_p()
  if x.XFetchName(d,window,C.byref(name)) and name.value:
   title=name.value.decode();x.XFree(name)
-  if title in ('Facet Companion','Cube Companion'):return window
+  if title in ('Qbing Companion','Cube Companion'):return window
  root=C.c_ulong();parent=C.c_ulong();children=C.POINTER(C.c_ulong)();count=C.c_uint()
  if x.XQueryTree(d,window,C.byref(root),C.byref(parent),C.byref(children),C.byref(count)):
   ids=list(children[:count.value]);x.XFree(children)

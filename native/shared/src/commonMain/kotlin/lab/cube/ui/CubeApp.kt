@@ -111,7 +111,7 @@ internal fun pageName(page: String) = when(page) { "Practice" -> "timer"; "Cases
     val quiet=c.page=="Practice"&&c.active?.startedAt!=null
     BoxWithConstraints(Modifier.fillMaxWidth().height(if(wide)88.dp else 72.dp),contentAlignment=Alignment.Center){
         Row(Modifier.widthIn(max=1040.dp).fillMaxWidth().padding(horizontal=if(wide)if(maxWidth<1120.dp)32.dp else 0.dp else 20.dp),verticalAlignment=Alignment.CenterVertically){
-            Text("Facet",fontSize=if(wide)20.sp else 18.sp,fontWeight=FontWeight.Medium,letterSpacing=(-.6).sp,
+            Text("Qbing",fontSize=if(wide)20.sp else 18.sp,fontWeight=FontWeight.Medium,letterSpacing=(-.6).sp,
                 color=if(quiet)Muted.copy(alpha=.3f)else Foreground,modifier=if(quiet)Modifier else Modifier.heightIn(min=44.dp).wrapContentHeight().clickable{c.page="Practice"})
             if(quiet){
                 Spacer(Modifier.weight(1f))
@@ -158,10 +158,9 @@ internal fun pageName(page: String) = when(page) { "Practice" -> "timer"; "Cases
     val color=Accent
     Canvas(Modifier.size(size.dp)){
         val unit=this.size.width/24f
-        for(points in listOf(listOf(4f to 5f,9f to 2f,9f to 19f,4f to 22f),listOf(10f to 2f,22f to 2f,18f to 7f,10f to 7f),listOf(10f to 10f,19f to 10f,15f to 15f,10f to 15f))){
-            val path=Path().apply{points.forEachIndexed{i,(x,y)->if(i==0)moveTo(x*unit,y*unit)else lineTo(x*unit,y*unit)};close()}
-            drawPath(path,color)
-        }
+        drawRoundRect(color,Offset(4*unit,4*unit),Size(15*unit,15*unit),androidx.compose.ui.geometry.CornerRadius(3*unit),style=Stroke(2.4f*unit))
+        drawLine(color,Offset(14*unit,14*unit),Offset(22*unit,22*unit),2.4f*unit)
+
     }
 }
 @Composable internal fun Glyph(name:String,color:Color=Muted,size:Int=20) {
@@ -614,7 +613,7 @@ internal fun scoredTime(record:AttemptRecord):String=(if(adjusted(record).isFini
         Spacer(Modifier.height(22.dp));SmallButton("Save changes",primary=true,enabled=c.active==null){runCatching{c.saveSettings(c.settings.copy(endpoint=endpoint.trim(),token=token.trim(),mac=mac.trim(),session=session.trim().ifBlank{"Practice"},cross=cross))}.onFailure{c.message=it.message?:"Could not save"}}
         Spacer(Modifier.height(20.dp));var about by remember{mutableStateOf(false)}
         QuietButton("About & measurement"){about=!about}
-        if(about){Label("Facet · Kotlin Android",12);Spacer(Modifier.height(8.dp));Label("HTM: R, R′ and R2 each count as one move. Recognition: cue to first turn.",12);Spacer(Modifier.height(8.dp));Label("Algorithms: Tao Yu / Alg-Trainer · MIT\nGAN protocol: gan-web-bluetooth · MIT",12)}
+        if(about){Label("Qbing · Kotlin Android",12);Spacer(Modifier.height(8.dp));Label("HTM: R, R′ and R2 each count as one move. Recognition: cue to first turn.",12);Spacer(Modifier.height(8.dp));Label("Algorithms: Tao Yu / Alg-Trainer · MIT\nGAN protocol: gan-web-bluetooth · MIT",12)}
     }
     }
     if(confirmReset)ResetCubeDialog(c,{confirmReset=false})

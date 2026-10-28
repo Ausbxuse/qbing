@@ -1,4 +1,4 @@
-# Facet
+# Qbing
 
 Native smart-cube timing, reconstruction, CFOP analysis and training. The Linux
 client is Rust/egui, the Android client is Kotlin/Compose, and the optional GNOME
@@ -13,19 +13,19 @@ From this checkout, install the app, desktop entry, login service and companion:
 nix run .#install
 ```
 
-Then run `facet` or open **Facet** from Applications. The GNOME companion needs
+Then run `qbing` or open **Qbing** from Applications. The GNOME companion needs
 one sign-out/sign-in after installation or an extension update. Closing the main
 window keeps Bluetooth tracking and the companion running; **Quit** or Ctrl+Q
 stops the app. The installer leaves an existing running process untouched.
 
-Installation uses a dedicated Nix profile at `$XDG_STATE_HOME/facet/profile`
-(default `~/.local/state/facet/profile`) and launchers in `~/.local/bin`. Existing
+Installation uses a dedicated Nix profile at `$XDG_STATE_HOME/qbing/profile`
+(default `~/.local/state/qbing/profile`) and launchers in `~/.local/bin`. Existing
 settings and solves in `~/.config/cstimer-native` are preserved. The same command
 updates the installed profile; Nix retains previous generations for rollback.
 GNOME Shell 50 is supported. BlueZ must be enabled on the host.
 
-For the app alone, use `nix profile add .#facet`. To try it without installing,
-use `nix run .`. Build and run Rust tests with `nix build .#facet`; the package
+For the app alone, use `nix profile add .#qbing`. To try it without installing,
+use `nix run .`. Build and run Rust tests with `nix build .#qbing`; the package
 builds from source using the checked-in Cargo lock and vendoring hash. The
 companion and desktop integration are packaged separately from the compiled
 core so changing their presentation does not recompile Rust.

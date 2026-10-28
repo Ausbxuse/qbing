@@ -24,7 +24,7 @@ html = html.replace(/<script type="text\/javascript" src="[^"]+"><\/script>/g, (
 html = html.replace('width=500, user-scalable=no', 'width=device-width, initial-scale=1, viewport-fit=cover');
 html = html.replace('</head>', '<link rel="stylesheet" href="css/local.css">\n<link rel="stylesheet" href="css/local-metrics.css">\n<link id="local-interface-css" rel="stylesheet" href="css/local-interface.css">\n<script type="importmap">{"imports":{"three":"./vendor/three/three.module.min.js"}}</script>\n<script src="js/local-appearance.js"></script>\n<script src="js/local-metrics.js"></script>\n<script src="js/local-scramble-guide.js"></script>\n<script src="js/local-action-menu.js"></script>\n<script src="js/local-review-data.js"></script>\n<script src="js/local-solve-tags.js"></script>\n<script src="js/local-review-tools.js"></script>\n<script src="js/local-interface.js"></script>\n</head>');
 html = html.replace('</body>', (await readFile(path.join(root, 'src/interface/app.html'), 'utf8')) + '</body>');
-html = html.replace(/<title>.*?<\/title>/, '<title>csTimer · Local</title>');
+html = html.replace(/<title>.*?<\/title>/, '<title>Qbing</title>');
 if (!inserted || html.includes('<?php')) throw new Error('Unexpected upstream HTML template');
 await writeFile(path.join(out, 'index.html'), html);
 for (const [source, dest] of [

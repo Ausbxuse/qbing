@@ -1,5 +1,5 @@
 {
-  description = "Facet — native smart-cube timer, analysis and GNOME companion";
+  description = "Qbing — native smart-cube timer, analysis and GNOME companion";
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   outputs =
     { self, nixpkgs }:
@@ -15,37 +15,37 @@
         system:
         let
           pkgs = import nixpkgs { inherit system; };
-          facet = pkgs.callPackage ./nix/package.nix { };
+          qbing = pkgs.callPackage ./nix/package.nix { };
           installer = pkgs.writeShellApplication {
-            name = "install-facet";
+            name = "install-qbing";
             runtimeInputs = [
               pkgs.nix
               pkgs.python3
               pkgs.systemd
               pkgs.glib
             ];
-            text = ''exec python3 ${./nix/install.py} ${facet} "$@"'';
+            text = ''exec python3 ${./nix/install.py} ${qbing} "$@"'';
           };
         in
         {
-          inherit facet installer;
-          default = facet;
+          inherit qbing installer;
+          default = qbing;
         }
       );
       apps = eachLinux (system: {
         default = {
           type = "app";
-          program = "${self.packages.${system}.facet}/bin/facet";
-          meta.description = "Open Facet";
+          program = "${self.packages.${system}.qbing}/bin/qbing";
+          meta.description = "Open Qbing";
         };
         install = {
           type = "app";
-          program = "${self.packages.${system}.installer}/bin/install-facet";
-          meta.description = "Install Facet and the GNOME companion for this user";
+          program = "${self.packages.${system}.installer}/bin/install-qbing";
+          meta.description = "Install Qbing and the GNOME companion for this user";
         };
       });
       checks = eachLinux (system: {
-        facet = self.packages.${system}.facet;
+        qbing = self.packages.${system}.qbing;
       });
       devShells = eachLinux (
         system:

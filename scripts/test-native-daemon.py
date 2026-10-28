@@ -75,7 +75,7 @@ try:
         name = C.c_char_p()
         result = []
         if x.XFetchName(d,parent,C.byref(name)) and name.value:
-            if name.value.decode() == 'Facet': result.append(parent)
+            if name.value.decode() == 'Qbing': result.append(parent)
             x.XFree(name)
         a=C.c_ulong(); b=C.c_ulong(); children=C.POINTER(C.c_ulong)(); count=C.c_uint()
         if x.XQueryTree(d,parent,C.byref(a),C.byref(b),C.byref(children),C.byref(count)):

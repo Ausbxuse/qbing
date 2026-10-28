@@ -254,7 +254,7 @@ pub fn enable_top_bar(ctx: egui::Context) -> mpsc::Receiver<Result<(), String>> 
         let result = match enabled {
             Ok(true) => Ok(()),
             Ok(false) => Err("GNOME has not discovered the installed companion yet. Sign out and back in once to load it.".into()),
-            Err(_) => Err("GNOME top bar is unavailable. The floating companion is available with facet --floating-companion.".into()),
+            Err(_) => Err("GNOME top bar is unavailable. The floating companion is available with qbing --floating-companion.".into()),
         };
         let _ = tx.send(result);
         ctx.request_repaint();

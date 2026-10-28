@@ -13,7 +13,7 @@ cat > "$CSTIMER_TEST_BIN/systemctl" <<'MOCK'
 #!/bin/sh
 # Private Shell test only: never touch the real user's systemd service.
 [ "$CSTIMER_PANEL_TEST" = 1 ] || exit 2
-[ "$*" = "--user start facet.service" ] || exit 2
+[ "$*" = "--user start qbing.service" ] || exit 2
 CSTIMER_FIXTURE_DISCONNECTED=1 LD_LIBRARY_PATH="$CSTIMER_NATIVE_LIBS" "$CSTIMER_TEST_FIXTURE" >> "$CSTIMER_TEST_RESTART_LOG" 2>&1 &
 echo $! > "$CSTIMER_TEST_RESTART_PID"
 MOCK

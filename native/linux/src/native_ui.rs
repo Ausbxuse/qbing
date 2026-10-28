@@ -115,18 +115,15 @@ fn icon(ui: &mut egui::Ui, id: &str, r: Rect, name: &str) -> egui::Response {
             ui.painter()
                 .line_segment([pt(18., 6.), pt(6., 18.)], stroke);
         }
-        "facet" => {
-            for points in [
-                vec![(4., 5.), (9., 2.), (9., 19.), (4., 22.)],
-                vec![(10., 2.), (22., 2.), (18., 7.), (10., 7.)],
-                vec![(10., 10.), (19., 10.), (15., 15.), (10., 15.)],
-            ] {
-                ui.painter().add(egui::Shape::convex_polygon(
-                    points.into_iter().map(|(x, y)| pt(x, y)).collect(),
-                    p.accent,
-                    Stroke::NONE,
-                ));
-            }
+        "qbing" => {
+            ui.painter().rect_stroke(
+                Rect::from_min_max(pt(4., 4.), pt(19., 19.)),
+                3.,
+                Stroke::new(2.4, p.accent),
+                egui::StrokeKind::Inside,
+            );
+            ui.painter()
+                .line_segment([pt(14., 14.), pt(22., 22.)], Stroke::new(2.4, p.accent));
         }
         "cube" => {
             ui.painter().rect_stroke(
@@ -537,13 +534,13 @@ fn header_view(app: &mut App, ui: &mut egui::Ui, r: Rect, mobile: bool) {
             r.min + Vec2::new(if mobile { 12. } else { 20. }, 8.),
             Vec2::new(26., 40.),
         ),
-        "facet",
+        "qbing",
     );
     text(
         ui,
         r.min + Vec2::new(if mobile { 46. } else { 54. }, 28.),
         Align2::LEFT_CENTER,
-        "Facet",
+        "Qbing",
         semibold(14.),
         p.text,
     );
@@ -2981,7 +2978,7 @@ fn companion(app: &mut App, ctx: &egui::Context) {
     ctx.show_viewport_immediate(
         viewport,
         egui::ViewportBuilder::default()
-            .with_title("Facet Companion")
+            .with_title("Qbing Companion")
             .with_icon(design::app_icon())
             .with_app_id("cstimer-companion")
             .with_decorations(false)

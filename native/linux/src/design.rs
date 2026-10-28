@@ -65,7 +65,7 @@ pub fn mono(size: f32) -> FontId {
 pub fn app_icon() -> std::sync::Arc<egui::IconData> {
     static ICON: std::sync::OnceLock<std::sync::Arc<egui::IconData>> = std::sync::OnceLock::new();
     ICON.get_or_init(|| {
-        let image = image::load_from_memory(include_bytes!("../../assets/app-icon/facet-256.png"))
+        let image = image::load_from_memory(include_bytes!("../../assets/app-icon/qbing-256.png"))
             .expect("Valid bundled app icon")
             .into_rgba8();
         std::sync::Arc::new(egui::IconData {
