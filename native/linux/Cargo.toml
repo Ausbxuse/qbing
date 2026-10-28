@@ -1,0 +1,31 @@
+[package]
+name = "cstimer-native"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+
+[dependencies]
+ab_glyph = "=0.2.32"
+winit = { version = "=0.30.13", default-features = false, features = ["wayland", "x11"] }
+eframe = { version = "=0.33.3", default-features = false, features = ["glow", "default_fonts", "wayland", "x11", "accesskit"] }
+bluer = { version = "=0.17.4", features = ["bluetoothd"] }
+tokio = { version = "1", features = ["rt-multi-thread", "sync", "time", "macros"] }
+futures = "0.3"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.12", default-features = false, features = ["blocking", "json", "rustls-tls"] }
+aes = "0.8"
+uuid = { version = "1", features = ["v4"] }
+chrono = { version = "0.4", default-features = false, features = ["clock", "serde"] }
+anyhow = "1"
+image = { version = "0.25", default-features = false, features = ["png"] }
+rfd = { version = "0.15", default-features = false, features = ["xdg-portal", "tokio"] }
+
+quick-js = "=0.4.1"
+flate2 = "1"
+zbus = { version = "=5.19.0", default-features = false, features = ["tokio", "blocking-api"] }
+
+[profile.release]
+strip = true
+lto = "thin"
+codegen-units = 1

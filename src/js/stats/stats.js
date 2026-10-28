@@ -555,7 +555,8 @@ var stats = execMain(function(kpretty, round, kpround) {
 		return {
 			proc: proc,
 			delLast: delLast,
-			setCfm: setCfm
+			setCfm: setCfm,
+			setPenalty: setPenalty
 		}
 	})();
 
@@ -2011,6 +2012,22 @@ var stats = execMain(function(kpretty, round, kpround) {
 
 	return {
 		importSessions: sessionManager.importSessions,
+		showSolve: floatCfm.proc,
+		setPenalty: function(index, penalty) {
+			if (index >= 0 && index < times.length && [0, 2000, -1].indexOf(penalty) != -1) {
+				floatCfm.setPenalty(penalty, index);
+			}
+		},
+		// Optional interface labels travel with the canonical record on export/import.
+		setReviewTags: function(index, value) {
+			var target = times[index];
+			if (!Number.isInteger(index) || index < 0 || index >= times.length || !target || !value || ['', 'blue', 'mint', 'amber', 'rose'].indexOf(value.color) < 0 ||
+				['', 'review', 'practice', 'milestone'].indexOf(value.group) < 0 ||
+				(target[5] != null && (typeof target[5] !== 'object' || Array.isArray(target[5])))) return Promise.reject(new Error('Invalid solve tags'));
+			var previous = target[5];
+			target[5] = Object.assign({}, previous, {localReview: {version: 1, favorite: value.favorite === true, color: value.color, group: value.group}});
+			return sessionManager.save(index).then(function() { updateUtil(['reviewTags', index]); }, function(error) { target[5] = previous; throw error; });
+		},
 		getReviewUrl: getReviewUrl,
 		pretty: pretty,
 		getStat12: function() {

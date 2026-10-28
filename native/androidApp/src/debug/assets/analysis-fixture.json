@@ -1,0 +1,325 @@
+{
+  "id": "analysis-four-pairs",
+  "createdAt": "2026-10-27T10:00:00Z",
+  "kind": "solve",
+  "source": "bluetooth",
+  "status": "complete",
+  "penalty": "",
+  "duration": 3170,
+  "initialState": "RDUDUDLFUFFBLRRBBDDLLBFUFFRDUDFDUUDRULBRLLFRLLBBBBUFRR",
+  "cross": "D",
+  "session": "Session 1",
+  "scramble": "B2 L2 F2 L' F2 R' B2 L2 F2 R U' B D2 L2 D2 L2 B L2",
+  "moves": [
+    {
+      "move": "F2",
+      "t": 0,
+      "raw": {
+        "cubeTimestamp": 1000,
+        "receivedAt": 0
+      }
+    },
+    {
+      "move": "R2",
+      "t": 40,
+      "raw": {
+        "cubeTimestamp": 1040,
+        "receivedAt": 40
+      }
+    },
+    {
+      "move": "D'",
+      "t": 80,
+      "raw": {
+        "cubeTimestamp": 1080,
+        "receivedAt": 80
+      }
+    },
+    {
+      "move": "B2",
+      "t": 120,
+      "raw": {
+        "cubeTimestamp": 1120,
+        "receivedAt": 120
+      }
+    },
+    {
+      "move": "L2",
+      "t": 160,
+      "raw": {
+        "cubeTimestamp": 1160,
+        "receivedAt": 160
+      }
+    },
+    {
+      "move": "R",
+      "t": 520,
+      "raw": {
+        "cubeTimestamp": 1520,
+        "receivedAt": 520
+      }
+    },
+    {
+      "move": "U",
+      "t": 560,
+      "raw": {
+        "cubeTimestamp": 1560,
+        "receivedAt": 560
+      }
+    },
+    {
+      "move": "R'",
+      "t": 600,
+      "raw": {
+        "cubeTimestamp": 1600,
+        "receivedAt": 600
+      }
+    },
+    {
+      "move": "L'",
+      "t": 720,
+      "raw": {
+        "cubeTimestamp": 1720,
+        "receivedAt": 720
+      }
+    },
+    {
+      "move": "U'",
+      "t": 760,
+      "raw": {
+        "cubeTimestamp": 1760,
+        "receivedAt": 760
+      }
+    },
+    {
+      "move": "L",
+      "t": 800,
+      "raw": {
+        "cubeTimestamp": 1800,
+        "receivedAt": 800
+      }
+    },
+    {
+      "move": "L",
+      "t": 1360,
+      "raw": {
+        "cubeTimestamp": 2360,
+        "receivedAt": 1360
+      }
+    },
+    {
+      "move": "U",
+      "t": 1400,
+      "raw": {
+        "cubeTimestamp": 2400,
+        "receivedAt": 1400
+      }
+    },
+    {
+      "move": "L'",
+      "t": 1440,
+      "raw": {
+        "cubeTimestamp": 2440,
+        "receivedAt": 1440
+      }
+    },
+    {
+      "move": "R'",
+      "t": 1620,
+      "raw": {
+        "cubeTimestamp": 2620,
+        "receivedAt": 1620
+      }
+    },
+    {
+      "move": "U'",
+      "t": 1660,
+      "raw": {
+        "cubeTimestamp": 2660,
+        "receivedAt": 1660
+      }
+    },
+    {
+      "move": "R",
+      "t": 1700,
+      "raw": {
+        "cubeTimestamp": 2700,
+        "receivedAt": 1700
+      }
+    },
+    {
+      "move": "R",
+      "t": 2060,
+      "raw": {
+        "cubeTimestamp": 3060,
+        "receivedAt": 2060
+      }
+    },
+    {
+      "move": "U",
+      "t": 2100,
+      "raw": {
+        "cubeTimestamp": 3100,
+        "receivedAt": 2100
+      }
+    },
+    {
+      "move": "R'",
+      "t": 2140,
+      "raw": {
+        "cubeTimestamp": 3140,
+        "receivedAt": 2140
+      }
+    },
+    {
+      "move": "U",
+      "t": 2180,
+      "raw": {
+        "cubeTimestamp": 3180,
+        "receivedAt": 2180
+      }
+    },
+    {
+      "move": "R",
+      "t": 2220,
+      "raw": {
+        "cubeTimestamp": 3220,
+        "receivedAt": 2220
+      }
+    },
+    {
+      "move": "U2",
+      "t": 2260,
+      "raw": {
+        "cubeTimestamp": 3260,
+        "receivedAt": 2260
+      }
+    },
+    {
+      "move": "R'",
+      "t": 2300,
+      "raw": {
+        "cubeTimestamp": 3300,
+        "receivedAt": 2300
+      }
+    },
+    {
+      "move": "R",
+      "t": 2650,
+      "raw": {
+        "cubeTimestamp": 3650,
+        "receivedAt": 2650
+      }
+    },
+    {
+      "move": "U",
+      "t": 2690,
+      "raw": {
+        "cubeTimestamp": 3690,
+        "receivedAt": 2690
+      }
+    },
+    {
+      "move": "R'",
+      "t": 2730,
+      "raw": {
+        "cubeTimestamp": 3730,
+        "receivedAt": 2730
+      }
+    },
+    {
+      "move": "U'",
+      "t": 2770,
+      "raw": {
+        "cubeTimestamp": 3770,
+        "receivedAt": 2770
+      }
+    },
+    {
+      "move": "R'",
+      "t": 2810,
+      "raw": {
+        "cubeTimestamp": 3810,
+        "receivedAt": 2810
+      }
+    },
+    {
+      "move": "F",
+      "t": 2850,
+      "raw": {
+        "cubeTimestamp": 3850,
+        "receivedAt": 2850
+      }
+    },
+    {
+      "move": "R2",
+      "t": 2890,
+      "raw": {
+        "cubeTimestamp": 3890,
+        "receivedAt": 2890
+      }
+    },
+    {
+      "move": "U'",
+      "t": 2930,
+      "raw": {
+        "cubeTimestamp": 3930,
+        "receivedAt": 2930
+      }
+    },
+    {
+      "move": "R'",
+      "t": 2970,
+      "raw": {
+        "cubeTimestamp": 3970,
+        "receivedAt": 2970
+      }
+    },
+    {
+      "move": "U'",
+      "t": 3010,
+      "raw": {
+        "cubeTimestamp": 4010,
+        "receivedAt": 3010
+      }
+    },
+    {
+      "move": "R",
+      "t": 3050,
+      "raw": {
+        "cubeTimestamp": 4050,
+        "receivedAt": 3050
+      }
+    },
+    {
+      "move": "U",
+      "t": 3090,
+      "raw": {
+        "cubeTimestamp": 4090,
+        "receivedAt": 3090
+      }
+    },
+    {
+      "move": "R'",
+      "t": 3130,
+      "raw": {
+        "cubeTimestamp": 4130,
+        "receivedAt": 3130
+      }
+    },
+    {
+      "move": "F'",
+      "t": 3170,
+      "raw": {
+        "cubeTimestamp": 4170,
+        "receivedAt": 3170
+      }
+    }
+  ],
+  "quality": [],
+  "scrambleStats": {
+    "duration": 4000,
+    "moves": 18,
+    "tps": 4.5
+  }
+}

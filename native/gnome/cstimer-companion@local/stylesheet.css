@@ -1,0 +1,29 @@
+/* Two rows of notation, followed by one aligned block of solve measurements. */
+.cube-companion {
+    margin: 0;
+    -natural-hpadding: 4px;
+    -minimum-hpadding: 4px;
+    -natural-vpadding: 0px;
+    -minimum-vpadding: 0px;
+    padding: 0 4px;
+    transition-duration: 0ms;
+    border-radius: 0;
+}
+.cube-companion-row { spacing: 0; height: 28px; }
+.cube-companion-status { width: 8px; height: 28px; }
+.cube-companion-dot { font-size: 7px; color: #737c88; }
+.cube-companion-dot.connected, .cube-companion-ready { color: #6dc4a6; }
+.cube-companion-notation { padding-left: 6px; font-family: 'Adwaita Mono'; font-size: 10px; }
+.cube-companion-scramble-row { height: 14px; spacing: 1px; }
+.cube-companion-token { height: 14px; padding: 0 2px; color: #c5cbd3; border-radius: 2px; }
+.cube-companion-token.done { color: #65707d; }
+.cube-companion-token.current { color: #c4ddff; background-color: rgba(133, 182, 250, 0.18); }
+.cube-companion-token.partial { color: #f0d49a; background-color: rgba(230, 188, 110, 0.16); }
+.cube-companion-token.repair { color: #e9a4ac; }
+.cube-companion-metrics { padding-left: 10px; }
+.cube-companion-time { font-family: 'Adwaita Sans'; font-size: 11px; font-weight: 600; height: 14px; text-align: right; color: #edf0f4; }
+.cube-companion-stats { font-family: 'Adwaita Sans'; font-size: 9px; font-weight: 400; height: 14px; }
+.cube-companion-tps { width: 50px; text-align: right; color: #a6b0bd; }
+.cube-companion-metric-separator { width: 8px; text-align: center; color: #606b79; }
+.cube-companion-moves { width: 20px; text-align: right; color: #bec6d0; }
+.cube-companion-detail { font-family: 'Adwaita Mono'; font-size: 12px; padding: 6px 0; }

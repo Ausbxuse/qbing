@@ -1,0 +1,5027 @@
+{
+  "records": [
+    {
+      "id": "synthetic-0",
+      "createdAt": "2023-11-14T22:13:20.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 10500,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 420,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 420,
+            "receivedAt": 420
+          }
+        },
+        {
+          "move": "D2",
+          "t": 840,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 840,
+            "receivedAt": 840
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1260,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1260,
+            "receivedAt": 1260
+          }
+        },
+        {
+          "move": "B2",
+          "t": 1680,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 1680,
+            "receivedAt": 1680
+          }
+        },
+        {
+          "move": "R",
+          "t": 2100,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2100,
+            "receivedAt": 2100
+          }
+        },
+        {
+          "move": "U",
+          "t": 2520,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 2520,
+            "receivedAt": 2520
+          }
+        },
+        {
+          "move": "R'",
+          "t": 2940,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 2940,
+            "receivedAt": 2940
+          }
+        },
+        {
+          "move": "U'",
+          "t": 3360,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 3360,
+            "receivedAt": 3360
+          }
+        },
+        {
+          "move": "F",
+          "t": 3780,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 3780,
+            "receivedAt": 3780
+          }
+        },
+        {
+          "move": "R",
+          "t": 4200,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 4200,
+            "receivedAt": 4200
+          }
+        },
+        {
+          "move": "U",
+          "t": 4620,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 4620,
+            "receivedAt": 4620
+          }
+        },
+        {
+          "move": "R'",
+          "t": 5040,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 5040,
+            "receivedAt": 5040
+          }
+        },
+        {
+          "move": "U'",
+          "t": 5460,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 5460,
+            "receivedAt": 5460
+          }
+        },
+        {
+          "move": "F'",
+          "t": 5880,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 5880,
+            "receivedAt": 5880
+          }
+        },
+        {
+          "move": "R",
+          "t": 6300,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 6300,
+            "receivedAt": 6300
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6720,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 6720,
+            "receivedAt": 6720
+          }
+        },
+        {
+          "move": "R",
+          "t": 7140,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 7140,
+            "receivedAt": 7140
+          }
+        },
+        {
+          "move": "U",
+          "t": 7560,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 7560,
+            "receivedAt": 7560
+          }
+        },
+        {
+          "move": "R",
+          "t": 7980,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 7980,
+            "receivedAt": 7980
+          }
+        },
+        {
+          "move": "U",
+          "t": 8400,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 8400,
+            "receivedAt": 8400
+          }
+        },
+        {
+          "move": "R",
+          "t": 8820,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 8820,
+            "receivedAt": 8820
+          }
+        },
+        {
+          "move": "U'",
+          "t": 9240,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 9240,
+            "receivedAt": 9240
+          }
+        },
+        {
+          "move": "R'",
+          "t": 9660,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 9660,
+            "receivedAt": 9660
+          }
+        },
+        {
+          "move": "U'",
+          "t": 10080,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 10080,
+            "receivedAt": 10080
+          }
+        },
+        {
+          "move": "R2",
+          "t": 10500,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 10500,
+            "receivedAt": 10500
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-1",
+      "createdAt": "2023-11-14T22:13:50.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 10670,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 427,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 427,
+            "receivedAt": 427
+          }
+        },
+        {
+          "move": "D2",
+          "t": 854,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 854,
+            "receivedAt": 854
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1280,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1280,
+            "receivedAt": 1280
+          }
+        },
+        {
+          "move": "B2",
+          "t": 1707,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 1707,
+            "receivedAt": 1707
+          }
+        },
+        {
+          "move": "R",
+          "t": 2134,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2134,
+            "receivedAt": 2134
+          }
+        },
+        {
+          "move": "U",
+          "t": 2561,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 2561,
+            "receivedAt": 2561
+          }
+        },
+        {
+          "move": "R'",
+          "t": 2988,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 2988,
+            "receivedAt": 2988
+          }
+        },
+        {
+          "move": "U'",
+          "t": 3414,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 3414,
+            "receivedAt": 3414
+          }
+        },
+        {
+          "move": "F",
+          "t": 3841,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 3841,
+            "receivedAt": 3841
+          }
+        },
+        {
+          "move": "R",
+          "t": 4268,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 4268,
+            "receivedAt": 4268
+          }
+        },
+        {
+          "move": "U",
+          "t": 4695,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 4695,
+            "receivedAt": 4695
+          }
+        },
+        {
+          "move": "R'",
+          "t": 5122,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 5122,
+            "receivedAt": 5122
+          }
+        },
+        {
+          "move": "U'",
+          "t": 5548,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 5548,
+            "receivedAt": 5548
+          }
+        },
+        {
+          "move": "F'",
+          "t": 5975,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 5975,
+            "receivedAt": 5975
+          }
+        },
+        {
+          "move": "R",
+          "t": 6402,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 6402,
+            "receivedAt": 6402
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6829,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 6829,
+            "receivedAt": 6829
+          }
+        },
+        {
+          "move": "R",
+          "t": 7256,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 7256,
+            "receivedAt": 7256
+          }
+        },
+        {
+          "move": "U",
+          "t": 7682,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 7682,
+            "receivedAt": 7682
+          }
+        },
+        {
+          "move": "R",
+          "t": 8109,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 8109,
+            "receivedAt": 8109
+          }
+        },
+        {
+          "move": "U",
+          "t": 8536,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 8536,
+            "receivedAt": 8536
+          }
+        },
+        {
+          "move": "R",
+          "t": 8963,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 8963,
+            "receivedAt": 8963
+          }
+        },
+        {
+          "move": "U'",
+          "t": 9390,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 9390,
+            "receivedAt": 9390
+          }
+        },
+        {
+          "move": "R'",
+          "t": 9816,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 9816,
+            "receivedAt": 9816
+          }
+        },
+        {
+          "move": "U'",
+          "t": 10243,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 10243,
+            "receivedAt": 10243
+          }
+        },
+        {
+          "move": "R2",
+          "t": 10670,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 10670,
+            "receivedAt": 10670
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-2",
+      "createdAt": "2023-11-14T22:14:20.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 10840,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 434,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 434,
+            "receivedAt": 434
+          }
+        },
+        {
+          "move": "D2",
+          "t": 867,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 867,
+            "receivedAt": 867
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1301,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1301,
+            "receivedAt": 1301
+          }
+        },
+        {
+          "move": "B2",
+          "t": 1734,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 1734,
+            "receivedAt": 1734
+          }
+        },
+        {
+          "move": "R",
+          "t": 2168,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2168,
+            "receivedAt": 2168
+          }
+        },
+        {
+          "move": "U",
+          "t": 2602,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 2602,
+            "receivedAt": 2602
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3035,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3035,
+            "receivedAt": 3035
+          }
+        },
+        {
+          "move": "U'",
+          "t": 3469,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 3469,
+            "receivedAt": 3469
+          }
+        },
+        {
+          "move": "F",
+          "t": 3902,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 3902,
+            "receivedAt": 3902
+          }
+        },
+        {
+          "move": "R",
+          "t": 4336,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 4336,
+            "receivedAt": 4336
+          }
+        },
+        {
+          "move": "U",
+          "t": 4770,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 4770,
+            "receivedAt": 4770
+          }
+        },
+        {
+          "move": "R'",
+          "t": 5203,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 5203,
+            "receivedAt": 5203
+          }
+        },
+        {
+          "move": "U'",
+          "t": 5637,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 5637,
+            "receivedAt": 5637
+          }
+        },
+        {
+          "move": "F'",
+          "t": 6070,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 6070,
+            "receivedAt": 6070
+          }
+        },
+        {
+          "move": "R",
+          "t": 6504,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 6504,
+            "receivedAt": 6504
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6938,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 6938,
+            "receivedAt": 6938
+          }
+        },
+        {
+          "move": "R",
+          "t": 7371,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 7371,
+            "receivedAt": 7371
+          }
+        },
+        {
+          "move": "U",
+          "t": 7805,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 7805,
+            "receivedAt": 7805
+          }
+        },
+        {
+          "move": "R",
+          "t": 8238,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 8238,
+            "receivedAt": 8238
+          }
+        },
+        {
+          "move": "U",
+          "t": 8672,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 8672,
+            "receivedAt": 8672
+          }
+        },
+        {
+          "move": "R",
+          "t": 9106,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 9106,
+            "receivedAt": 9106
+          }
+        },
+        {
+          "move": "U'",
+          "t": 9539,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 9539,
+            "receivedAt": 9539
+          }
+        },
+        {
+          "move": "R'",
+          "t": 9973,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 9973,
+            "receivedAt": 9973
+          }
+        },
+        {
+          "move": "U'",
+          "t": 10406,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 10406,
+            "receivedAt": 10406
+          }
+        },
+        {
+          "move": "R2",
+          "t": 10840,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 10840,
+            "receivedAt": 10840
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-3",
+      "createdAt": "2023-11-14T22:14:50.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 11010,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 440,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 440,
+            "receivedAt": 440
+          }
+        },
+        {
+          "move": "D2",
+          "t": 881,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 881,
+            "receivedAt": 881
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1321,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1321,
+            "receivedAt": 1321
+          }
+        },
+        {
+          "move": "B2",
+          "t": 1762,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 1762,
+            "receivedAt": 1762
+          }
+        },
+        {
+          "move": "R",
+          "t": 2202,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2202,
+            "receivedAt": 2202
+          }
+        },
+        {
+          "move": "U",
+          "t": 2642,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 2642,
+            "receivedAt": 2642
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3083,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3083,
+            "receivedAt": 3083
+          }
+        },
+        {
+          "move": "U'",
+          "t": 3523,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 3523,
+            "receivedAt": 3523
+          }
+        },
+        {
+          "move": "F",
+          "t": 3964,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 3964,
+            "receivedAt": 3964
+          }
+        },
+        {
+          "move": "R",
+          "t": 4404,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 4404,
+            "receivedAt": 4404
+          }
+        },
+        {
+          "move": "U",
+          "t": 4844,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 4844,
+            "receivedAt": 4844
+          }
+        },
+        {
+          "move": "R'",
+          "t": 5285,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 5285,
+            "receivedAt": 5285
+          }
+        },
+        {
+          "move": "U'",
+          "t": 5725,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 5725,
+            "receivedAt": 5725
+          }
+        },
+        {
+          "move": "F'",
+          "t": 6166,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 6166,
+            "receivedAt": 6166
+          }
+        },
+        {
+          "move": "R",
+          "t": 6606,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 6606,
+            "receivedAt": 6606
+          }
+        },
+        {
+          "move": "U'",
+          "t": 7046,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 7046,
+            "receivedAt": 7046
+          }
+        },
+        {
+          "move": "R",
+          "t": 7487,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 7487,
+            "receivedAt": 7487
+          }
+        },
+        {
+          "move": "U",
+          "t": 7927,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 7927,
+            "receivedAt": 7927
+          }
+        },
+        {
+          "move": "R",
+          "t": 8368,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 8368,
+            "receivedAt": 8368
+          }
+        },
+        {
+          "move": "U",
+          "t": 8808,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 8808,
+            "receivedAt": 8808
+          }
+        },
+        {
+          "move": "R",
+          "t": 9248,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 9248,
+            "receivedAt": 9248
+          }
+        },
+        {
+          "move": "U'",
+          "t": 9689,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 9689,
+            "receivedAt": 9689
+          }
+        },
+        {
+          "move": "R'",
+          "t": 10129,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 10129,
+            "receivedAt": 10129
+          }
+        },
+        {
+          "move": "U'",
+          "t": 10570,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 10570,
+            "receivedAt": 10570
+          }
+        },
+        {
+          "move": "R2",
+          "t": 11010,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 11010,
+            "receivedAt": 11010
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-4",
+      "createdAt": "2023-11-14T22:15:20.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 11180,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 447,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 447,
+            "receivedAt": 447
+          }
+        },
+        {
+          "move": "D2",
+          "t": 894,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 894,
+            "receivedAt": 894
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1342,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1342,
+            "receivedAt": 1342
+          }
+        },
+        {
+          "move": "B2",
+          "t": 1789,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 1789,
+            "receivedAt": 1789
+          }
+        },
+        {
+          "move": "R",
+          "t": 2236,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2236,
+            "receivedAt": 2236
+          }
+        },
+        {
+          "move": "U",
+          "t": 2683,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 2683,
+            "receivedAt": 2683
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3130,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3130,
+            "receivedAt": 3130
+          }
+        },
+        {
+          "move": "U'",
+          "t": 3578,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 3578,
+            "receivedAt": 3578
+          }
+        },
+        {
+          "move": "F",
+          "t": 4025,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4025,
+            "receivedAt": 4025
+          }
+        },
+        {
+          "move": "R",
+          "t": 4472,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 4472,
+            "receivedAt": 4472
+          }
+        },
+        {
+          "move": "U",
+          "t": 4919,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 4919,
+            "receivedAt": 4919
+          }
+        },
+        {
+          "move": "R'",
+          "t": 5366,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 5366,
+            "receivedAt": 5366
+          }
+        },
+        {
+          "move": "U'",
+          "t": 5814,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 5814,
+            "receivedAt": 5814
+          }
+        },
+        {
+          "move": "F'",
+          "t": 6261,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 6261,
+            "receivedAt": 6261
+          }
+        },
+        {
+          "move": "R",
+          "t": 6708,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 6708,
+            "receivedAt": 6708
+          }
+        },
+        {
+          "move": "U'",
+          "t": 7155,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 7155,
+            "receivedAt": 7155
+          }
+        },
+        {
+          "move": "R",
+          "t": 7602,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 7602,
+            "receivedAt": 7602
+          }
+        },
+        {
+          "move": "U",
+          "t": 8050,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 8050,
+            "receivedAt": 8050
+          }
+        },
+        {
+          "move": "R",
+          "t": 8497,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 8497,
+            "receivedAt": 8497
+          }
+        },
+        {
+          "move": "U",
+          "t": 8944,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 8944,
+            "receivedAt": 8944
+          }
+        },
+        {
+          "move": "R",
+          "t": 9391,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 9391,
+            "receivedAt": 9391
+          }
+        },
+        {
+          "move": "U'",
+          "t": 9838,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 9838,
+            "receivedAt": 9838
+          }
+        },
+        {
+          "move": "R'",
+          "t": 10286,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 10286,
+            "receivedAt": 10286
+          }
+        },
+        {
+          "move": "U'",
+          "t": 10733,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 10733,
+            "receivedAt": 10733
+          }
+        },
+        {
+          "move": "R2",
+          "t": 11180,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 11180,
+            "receivedAt": 11180
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-5",
+      "createdAt": "2023-11-14T22:15:50.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 11350,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 454,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 454,
+            "receivedAt": 454
+          }
+        },
+        {
+          "move": "D2",
+          "t": 908,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 908,
+            "receivedAt": 908
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1362,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1362,
+            "receivedAt": 1362
+          }
+        },
+        {
+          "move": "B2",
+          "t": 1816,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 1816,
+            "receivedAt": 1816
+          }
+        },
+        {
+          "move": "R",
+          "t": 2270,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2270,
+            "receivedAt": 2270
+          }
+        },
+        {
+          "move": "U",
+          "t": 2724,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 2724,
+            "receivedAt": 2724
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3178,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3178,
+            "receivedAt": 3178
+          }
+        },
+        {
+          "move": "U'",
+          "t": 3632,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 3632,
+            "receivedAt": 3632
+          }
+        },
+        {
+          "move": "F",
+          "t": 4086,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4086,
+            "receivedAt": 4086
+          }
+        },
+        {
+          "move": "R",
+          "t": 4540,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 4540,
+            "receivedAt": 4540
+          }
+        },
+        {
+          "move": "U",
+          "t": 4994,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 4994,
+            "receivedAt": 4994
+          }
+        },
+        {
+          "move": "R'",
+          "t": 5448,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 5448,
+            "receivedAt": 5448
+          }
+        },
+        {
+          "move": "U'",
+          "t": 5902,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 5902,
+            "receivedAt": 5902
+          }
+        },
+        {
+          "move": "F'",
+          "t": 6356,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 6356,
+            "receivedAt": 6356
+          }
+        },
+        {
+          "move": "R",
+          "t": 6810,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 6810,
+            "receivedAt": 6810
+          }
+        },
+        {
+          "move": "U'",
+          "t": 7264,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 7264,
+            "receivedAt": 7264
+          }
+        },
+        {
+          "move": "R",
+          "t": 7718,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 7718,
+            "receivedAt": 7718
+          }
+        },
+        {
+          "move": "U",
+          "t": 8172,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 8172,
+            "receivedAt": 8172
+          }
+        },
+        {
+          "move": "R",
+          "t": 8626,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 8626,
+            "receivedAt": 8626
+          }
+        },
+        {
+          "move": "U",
+          "t": 9080,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 9080,
+            "receivedAt": 9080
+          }
+        },
+        {
+          "move": "R",
+          "t": 9534,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 9534,
+            "receivedAt": 9534
+          }
+        },
+        {
+          "move": "U'",
+          "t": 9988,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 9988,
+            "receivedAt": 9988
+          }
+        },
+        {
+          "move": "R'",
+          "t": 10442,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 10442,
+            "receivedAt": 10442
+          }
+        },
+        {
+          "move": "U'",
+          "t": 10896,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 10896,
+            "receivedAt": 10896
+          }
+        },
+        {
+          "move": "R2",
+          "t": 11350,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 11350,
+            "receivedAt": 11350
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-6",
+      "createdAt": "2023-11-14T22:16:20.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 11520,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 461,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 461,
+            "receivedAt": 461
+          }
+        },
+        {
+          "move": "D2",
+          "t": 922,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 922,
+            "receivedAt": 922
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1382,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1382,
+            "receivedAt": 1382
+          }
+        },
+        {
+          "move": "B2",
+          "t": 1843,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 1843,
+            "receivedAt": 1843
+          }
+        },
+        {
+          "move": "R",
+          "t": 2304,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2304,
+            "receivedAt": 2304
+          }
+        },
+        {
+          "move": "U",
+          "t": 2765,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 2765,
+            "receivedAt": 2765
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3226,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3226,
+            "receivedAt": 3226
+          }
+        },
+        {
+          "move": "U'",
+          "t": 3686,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 3686,
+            "receivedAt": 3686
+          }
+        },
+        {
+          "move": "F",
+          "t": 4147,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4147,
+            "receivedAt": 4147
+          }
+        },
+        {
+          "move": "R",
+          "t": 4608,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 4608,
+            "receivedAt": 4608
+          }
+        },
+        {
+          "move": "U",
+          "t": 5069,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 5069,
+            "receivedAt": 5069
+          }
+        },
+        {
+          "move": "R'",
+          "t": 5530,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 5530,
+            "receivedAt": 5530
+          }
+        },
+        {
+          "move": "U'",
+          "t": 5990,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 5990,
+            "receivedAt": 5990
+          }
+        },
+        {
+          "move": "F'",
+          "t": 6451,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 6451,
+            "receivedAt": 6451
+          }
+        },
+        {
+          "move": "R",
+          "t": 6912,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 6912,
+            "receivedAt": 6912
+          }
+        },
+        {
+          "move": "U'",
+          "t": 7373,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 7373,
+            "receivedAt": 7373
+          }
+        },
+        {
+          "move": "R",
+          "t": 7834,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 7834,
+            "receivedAt": 7834
+          }
+        },
+        {
+          "move": "U",
+          "t": 8294,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 8294,
+            "receivedAt": 8294
+          }
+        },
+        {
+          "move": "R",
+          "t": 8755,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 8755,
+            "receivedAt": 8755
+          }
+        },
+        {
+          "move": "U",
+          "t": 9216,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 9216,
+            "receivedAt": 9216
+          }
+        },
+        {
+          "move": "R",
+          "t": 9677,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 9677,
+            "receivedAt": 9677
+          }
+        },
+        {
+          "move": "U'",
+          "t": 10138,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 10138,
+            "receivedAt": 10138
+          }
+        },
+        {
+          "move": "R'",
+          "t": 10598,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 10598,
+            "receivedAt": 10598
+          }
+        },
+        {
+          "move": "U'",
+          "t": 11059,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 11059,
+            "receivedAt": 11059
+          }
+        },
+        {
+          "move": "R2",
+          "t": 11520,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 11520,
+            "receivedAt": 11520
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-7",
+      "createdAt": "2023-11-14T22:16:50.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 11690,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 468,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 468,
+            "receivedAt": 468
+          }
+        },
+        {
+          "move": "D2",
+          "t": 935,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 935,
+            "receivedAt": 935
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1403,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1403,
+            "receivedAt": 1403
+          }
+        },
+        {
+          "move": "B2",
+          "t": 1870,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 1870,
+            "receivedAt": 1870
+          }
+        },
+        {
+          "move": "R",
+          "t": 2338,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2338,
+            "receivedAt": 2338
+          }
+        },
+        {
+          "move": "U",
+          "t": 2806,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 2806,
+            "receivedAt": 2806
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3273,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3273,
+            "receivedAt": 3273
+          }
+        },
+        {
+          "move": "U'",
+          "t": 3741,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 3741,
+            "receivedAt": 3741
+          }
+        },
+        {
+          "move": "F",
+          "t": 4208,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4208,
+            "receivedAt": 4208
+          }
+        },
+        {
+          "move": "R",
+          "t": 4676,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 4676,
+            "receivedAt": 4676
+          }
+        },
+        {
+          "move": "U",
+          "t": 5144,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 5144,
+            "receivedAt": 5144
+          }
+        },
+        {
+          "move": "R'",
+          "t": 5611,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 5611,
+            "receivedAt": 5611
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6079,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 6079,
+            "receivedAt": 6079
+          }
+        },
+        {
+          "move": "F'",
+          "t": 6546,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 6546,
+            "receivedAt": 6546
+          }
+        },
+        {
+          "move": "R",
+          "t": 7014,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 7014,
+            "receivedAt": 7014
+          }
+        },
+        {
+          "move": "U'",
+          "t": 7482,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 7482,
+            "receivedAt": 7482
+          }
+        },
+        {
+          "move": "R",
+          "t": 7949,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 7949,
+            "receivedAt": 7949
+          }
+        },
+        {
+          "move": "U",
+          "t": 8417,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 8417,
+            "receivedAt": 8417
+          }
+        },
+        {
+          "move": "R",
+          "t": 8884,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 8884,
+            "receivedAt": 8884
+          }
+        },
+        {
+          "move": "U",
+          "t": 9352,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 9352,
+            "receivedAt": 9352
+          }
+        },
+        {
+          "move": "R",
+          "t": 9820,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 9820,
+            "receivedAt": 9820
+          }
+        },
+        {
+          "move": "U'",
+          "t": 10287,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 10287,
+            "receivedAt": 10287
+          }
+        },
+        {
+          "move": "R'",
+          "t": 10755,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 10755,
+            "receivedAt": 10755
+          }
+        },
+        {
+          "move": "U'",
+          "t": 11222,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 11222,
+            "receivedAt": 11222
+          }
+        },
+        {
+          "move": "R2",
+          "t": 11690,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 11690,
+            "receivedAt": 11690
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-8",
+      "createdAt": "2023-11-14T22:17:20.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 11860,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 474,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 474,
+            "receivedAt": 474
+          }
+        },
+        {
+          "move": "D2",
+          "t": 949,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 949,
+            "receivedAt": 949
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1423,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1423,
+            "receivedAt": 1423
+          }
+        },
+        {
+          "move": "B2",
+          "t": 1898,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 1898,
+            "receivedAt": 1898
+          }
+        },
+        {
+          "move": "R",
+          "t": 2372,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2372,
+            "receivedAt": 2372
+          }
+        },
+        {
+          "move": "U",
+          "t": 2846,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 2846,
+            "receivedAt": 2846
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3321,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3321,
+            "receivedAt": 3321
+          }
+        },
+        {
+          "move": "U'",
+          "t": 3795,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 3795,
+            "receivedAt": 3795
+          }
+        },
+        {
+          "move": "F",
+          "t": 4270,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4270,
+            "receivedAt": 4270
+          }
+        },
+        {
+          "move": "R",
+          "t": 4744,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 4744,
+            "receivedAt": 4744
+          }
+        },
+        {
+          "move": "U",
+          "t": 5218,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 5218,
+            "receivedAt": 5218
+          }
+        },
+        {
+          "move": "R'",
+          "t": 5693,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 5693,
+            "receivedAt": 5693
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6167,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 6167,
+            "receivedAt": 6167
+          }
+        },
+        {
+          "move": "F'",
+          "t": 6642,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 6642,
+            "receivedAt": 6642
+          }
+        },
+        {
+          "move": "R",
+          "t": 7116,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 7116,
+            "receivedAt": 7116
+          }
+        },
+        {
+          "move": "U'",
+          "t": 7590,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 7590,
+            "receivedAt": 7590
+          }
+        },
+        {
+          "move": "R",
+          "t": 8065,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 8065,
+            "receivedAt": 8065
+          }
+        },
+        {
+          "move": "U",
+          "t": 8539,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 8539,
+            "receivedAt": 8539
+          }
+        },
+        {
+          "move": "R",
+          "t": 9014,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 9014,
+            "receivedAt": 9014
+          }
+        },
+        {
+          "move": "U",
+          "t": 9488,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 9488,
+            "receivedAt": 9488
+          }
+        },
+        {
+          "move": "R",
+          "t": 9962,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 9962,
+            "receivedAt": 9962
+          }
+        },
+        {
+          "move": "U'",
+          "t": 10437,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 10437,
+            "receivedAt": 10437
+          }
+        },
+        {
+          "move": "R'",
+          "t": 10911,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 10911,
+            "receivedAt": 10911
+          }
+        },
+        {
+          "move": "U'",
+          "t": 11386,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 11386,
+            "receivedAt": 11386
+          }
+        },
+        {
+          "move": "R2",
+          "t": 11860,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 11860,
+            "receivedAt": 11860
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-9",
+      "createdAt": "2023-11-14T22:17:50.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 12030,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 481,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 481,
+            "receivedAt": 481
+          }
+        },
+        {
+          "move": "D2",
+          "t": 962,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 962,
+            "receivedAt": 962
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1444,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1444,
+            "receivedAt": 1444
+          }
+        },
+        {
+          "move": "B2",
+          "t": 1925,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 1925,
+            "receivedAt": 1925
+          }
+        },
+        {
+          "move": "R",
+          "t": 2406,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2406,
+            "receivedAt": 2406
+          }
+        },
+        {
+          "move": "U",
+          "t": 2887,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 2887,
+            "receivedAt": 2887
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3368,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3368,
+            "receivedAt": 3368
+          }
+        },
+        {
+          "move": "U'",
+          "t": 3850,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 3850,
+            "receivedAt": 3850
+          }
+        },
+        {
+          "move": "F",
+          "t": 4331,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4331,
+            "receivedAt": 4331
+          }
+        },
+        {
+          "move": "R",
+          "t": 4812,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 4812,
+            "receivedAt": 4812
+          }
+        },
+        {
+          "move": "U",
+          "t": 5293,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 5293,
+            "receivedAt": 5293
+          }
+        },
+        {
+          "move": "R'",
+          "t": 5774,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 5774,
+            "receivedAt": 5774
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6256,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 6256,
+            "receivedAt": 6256
+          }
+        },
+        {
+          "move": "F'",
+          "t": 6737,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 6737,
+            "receivedAt": 6737
+          }
+        },
+        {
+          "move": "R",
+          "t": 7218,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 7218,
+            "receivedAt": 7218
+          }
+        },
+        {
+          "move": "U'",
+          "t": 7699,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 7699,
+            "receivedAt": 7699
+          }
+        },
+        {
+          "move": "R",
+          "t": 8180,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 8180,
+            "receivedAt": 8180
+          }
+        },
+        {
+          "move": "U",
+          "t": 8662,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 8662,
+            "receivedAt": 8662
+          }
+        },
+        {
+          "move": "R",
+          "t": 9143,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 9143,
+            "receivedAt": 9143
+          }
+        },
+        {
+          "move": "U",
+          "t": 9624,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 9624,
+            "receivedAt": 9624
+          }
+        },
+        {
+          "move": "R",
+          "t": 10105,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 10105,
+            "receivedAt": 10105
+          }
+        },
+        {
+          "move": "U'",
+          "t": 10586,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 10586,
+            "receivedAt": 10586
+          }
+        },
+        {
+          "move": "R'",
+          "t": 11068,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 11068,
+            "receivedAt": 11068
+          }
+        },
+        {
+          "move": "U'",
+          "t": 11549,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 11549,
+            "receivedAt": 11549
+          }
+        },
+        {
+          "move": "R2",
+          "t": 12030,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 12030,
+            "receivedAt": 12030
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-10",
+      "createdAt": "2023-11-14T22:18:20.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 12200,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 488,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 488,
+            "receivedAt": 488
+          }
+        },
+        {
+          "move": "D2",
+          "t": 976,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 976,
+            "receivedAt": 976
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1464,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1464,
+            "receivedAt": 1464
+          }
+        },
+        {
+          "move": "B2",
+          "t": 1952,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 1952,
+            "receivedAt": 1952
+          }
+        },
+        {
+          "move": "R",
+          "t": 2440,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2440,
+            "receivedAt": 2440
+          }
+        },
+        {
+          "move": "U",
+          "t": 2928,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 2928,
+            "receivedAt": 2928
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3416,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3416,
+            "receivedAt": 3416
+          }
+        },
+        {
+          "move": "U'",
+          "t": 3904,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 3904,
+            "receivedAt": 3904
+          }
+        },
+        {
+          "move": "F",
+          "t": 4392,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4392,
+            "receivedAt": 4392
+          }
+        },
+        {
+          "move": "R",
+          "t": 4880,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 4880,
+            "receivedAt": 4880
+          }
+        },
+        {
+          "move": "U",
+          "t": 5368,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 5368,
+            "receivedAt": 5368
+          }
+        },
+        {
+          "move": "R'",
+          "t": 5856,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 5856,
+            "receivedAt": 5856
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6344,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 6344,
+            "receivedAt": 6344
+          }
+        },
+        {
+          "move": "F'",
+          "t": 6832,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 6832,
+            "receivedAt": 6832
+          }
+        },
+        {
+          "move": "R",
+          "t": 7320,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 7320,
+            "receivedAt": 7320
+          }
+        },
+        {
+          "move": "U'",
+          "t": 7808,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 7808,
+            "receivedAt": 7808
+          }
+        },
+        {
+          "move": "R",
+          "t": 8296,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 8296,
+            "receivedAt": 8296
+          }
+        },
+        {
+          "move": "U",
+          "t": 8784,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 8784,
+            "receivedAt": 8784
+          }
+        },
+        {
+          "move": "R",
+          "t": 9272,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 9272,
+            "receivedAt": 9272
+          }
+        },
+        {
+          "move": "U",
+          "t": 9760,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 9760,
+            "receivedAt": 9760
+          }
+        },
+        {
+          "move": "R",
+          "t": 10248,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 10248,
+            "receivedAt": 10248
+          }
+        },
+        {
+          "move": "U'",
+          "t": 10736,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 10736,
+            "receivedAt": 10736
+          }
+        },
+        {
+          "move": "R'",
+          "t": 11224,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 11224,
+            "receivedAt": 11224
+          }
+        },
+        {
+          "move": "U'",
+          "t": 11712,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 11712,
+            "receivedAt": 11712
+          }
+        },
+        {
+          "move": "R2",
+          "t": 12200,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 12200,
+            "receivedAt": 12200
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-11",
+      "createdAt": "2023-11-14T22:18:50.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 12370,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 495,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 495,
+            "receivedAt": 495
+          }
+        },
+        {
+          "move": "D2",
+          "t": 990,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 990,
+            "receivedAt": 990
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1484,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1484,
+            "receivedAt": 1484
+          }
+        },
+        {
+          "move": "B2",
+          "t": 1979,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 1979,
+            "receivedAt": 1979
+          }
+        },
+        {
+          "move": "R",
+          "t": 2474,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2474,
+            "receivedAt": 2474
+          }
+        },
+        {
+          "move": "U",
+          "t": 2969,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 2969,
+            "receivedAt": 2969
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3464,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3464,
+            "receivedAt": 3464
+          }
+        },
+        {
+          "move": "U'",
+          "t": 3958,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 3958,
+            "receivedAt": 3958
+          }
+        },
+        {
+          "move": "F",
+          "t": 4453,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4453,
+            "receivedAt": 4453
+          }
+        },
+        {
+          "move": "R",
+          "t": 4948,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 4948,
+            "receivedAt": 4948
+          }
+        },
+        {
+          "move": "U",
+          "t": 5443,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 5443,
+            "receivedAt": 5443
+          }
+        },
+        {
+          "move": "R'",
+          "t": 5938,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 5938,
+            "receivedAt": 5938
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6432,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 6432,
+            "receivedAt": 6432
+          }
+        },
+        {
+          "move": "F'",
+          "t": 6927,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 6927,
+            "receivedAt": 6927
+          }
+        },
+        {
+          "move": "R",
+          "t": 7422,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 7422,
+            "receivedAt": 7422
+          }
+        },
+        {
+          "move": "U'",
+          "t": 7917,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 7917,
+            "receivedAt": 7917
+          }
+        },
+        {
+          "move": "R",
+          "t": 8412,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 8412,
+            "receivedAt": 8412
+          }
+        },
+        {
+          "move": "U",
+          "t": 8906,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 8906,
+            "receivedAt": 8906
+          }
+        },
+        {
+          "move": "R",
+          "t": 9401,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 9401,
+            "receivedAt": 9401
+          }
+        },
+        {
+          "move": "U",
+          "t": 9896,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 9896,
+            "receivedAt": 9896
+          }
+        },
+        {
+          "move": "R",
+          "t": 10391,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 10391,
+            "receivedAt": 10391
+          }
+        },
+        {
+          "move": "U'",
+          "t": 10886,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 10886,
+            "receivedAt": 10886
+          }
+        },
+        {
+          "move": "R'",
+          "t": 11380,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 11380,
+            "receivedAt": 11380
+          }
+        },
+        {
+          "move": "U'",
+          "t": 11875,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 11875,
+            "receivedAt": 11875
+          }
+        },
+        {
+          "move": "R2",
+          "t": 12370,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 12370,
+            "receivedAt": 12370
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-12",
+      "createdAt": "2023-11-14T22:19:20.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 12540,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 502,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 502,
+            "receivedAt": 502
+          }
+        },
+        {
+          "move": "D2",
+          "t": 1003,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 1003,
+            "receivedAt": 1003
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1505,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1505,
+            "receivedAt": 1505
+          }
+        },
+        {
+          "move": "B2",
+          "t": 2006,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 2006,
+            "receivedAt": 2006
+          }
+        },
+        {
+          "move": "R",
+          "t": 2508,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2508,
+            "receivedAt": 2508
+          }
+        },
+        {
+          "move": "U",
+          "t": 3010,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 3010,
+            "receivedAt": 3010
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3511,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3511,
+            "receivedAt": 3511
+          }
+        },
+        {
+          "move": "U'",
+          "t": 4013,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 4013,
+            "receivedAt": 4013
+          }
+        },
+        {
+          "move": "F",
+          "t": 4514,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4514,
+            "receivedAt": 4514
+          }
+        },
+        {
+          "move": "R",
+          "t": 5016,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 5016,
+            "receivedAt": 5016
+          }
+        },
+        {
+          "move": "U",
+          "t": 5518,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 5518,
+            "receivedAt": 5518
+          }
+        },
+        {
+          "move": "R'",
+          "t": 6019,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 6019,
+            "receivedAt": 6019
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6521,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 6521,
+            "receivedAt": 6521
+          }
+        },
+        {
+          "move": "F'",
+          "t": 7022,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 7022,
+            "receivedAt": 7022
+          }
+        },
+        {
+          "move": "R",
+          "t": 7524,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 7524,
+            "receivedAt": 7524
+          }
+        },
+        {
+          "move": "U'",
+          "t": 8026,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 8026,
+            "receivedAt": 8026
+          }
+        },
+        {
+          "move": "R",
+          "t": 8527,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 8527,
+            "receivedAt": 8527
+          }
+        },
+        {
+          "move": "U",
+          "t": 9029,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 9029,
+            "receivedAt": 9029
+          }
+        },
+        {
+          "move": "R",
+          "t": 9530,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 9530,
+            "receivedAt": 9530
+          }
+        },
+        {
+          "move": "U",
+          "t": 10032,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 10032,
+            "receivedAt": 10032
+          }
+        },
+        {
+          "move": "R",
+          "t": 10534,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 10534,
+            "receivedAt": 10534
+          }
+        },
+        {
+          "move": "U'",
+          "t": 11035,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 11035,
+            "receivedAt": 11035
+          }
+        },
+        {
+          "move": "R'",
+          "t": 11537,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 11537,
+            "receivedAt": 11537
+          }
+        },
+        {
+          "move": "U'",
+          "t": 12038,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 12038,
+            "receivedAt": 12038
+          }
+        },
+        {
+          "move": "R2",
+          "t": 12540,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 12540,
+            "receivedAt": 12540
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-13",
+      "createdAt": "2023-11-14T22:19:50.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 12710,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 508,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 508,
+            "receivedAt": 508
+          }
+        },
+        {
+          "move": "D2",
+          "t": 1017,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 1017,
+            "receivedAt": 1017
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1525,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1525,
+            "receivedAt": 1525
+          }
+        },
+        {
+          "move": "B2",
+          "t": 2034,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 2034,
+            "receivedAt": 2034
+          }
+        },
+        {
+          "move": "R",
+          "t": 2542,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2542,
+            "receivedAt": 2542
+          }
+        },
+        {
+          "move": "U",
+          "t": 3050,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 3050,
+            "receivedAt": 3050
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3559,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3559,
+            "receivedAt": 3559
+          }
+        },
+        {
+          "move": "U'",
+          "t": 4067,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 4067,
+            "receivedAt": 4067
+          }
+        },
+        {
+          "move": "F",
+          "t": 4576,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4576,
+            "receivedAt": 4576
+          }
+        },
+        {
+          "move": "R",
+          "t": 5084,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 5084,
+            "receivedAt": 5084
+          }
+        },
+        {
+          "move": "U",
+          "t": 5592,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 5592,
+            "receivedAt": 5592
+          }
+        },
+        {
+          "move": "R'",
+          "t": 6101,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 6101,
+            "receivedAt": 6101
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6609,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 6609,
+            "receivedAt": 6609
+          }
+        },
+        {
+          "move": "F'",
+          "t": 7118,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 7118,
+            "receivedAt": 7118
+          }
+        },
+        {
+          "move": "R",
+          "t": 7626,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 7626,
+            "receivedAt": 7626
+          }
+        },
+        {
+          "move": "U'",
+          "t": 8134,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 8134,
+            "receivedAt": 8134
+          }
+        },
+        {
+          "move": "R",
+          "t": 8643,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 8643,
+            "receivedAt": 8643
+          }
+        },
+        {
+          "move": "U",
+          "t": 9151,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 9151,
+            "receivedAt": 9151
+          }
+        },
+        {
+          "move": "R",
+          "t": 9660,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 9660,
+            "receivedAt": 9660
+          }
+        },
+        {
+          "move": "U",
+          "t": 10168,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 10168,
+            "receivedAt": 10168
+          }
+        },
+        {
+          "move": "R",
+          "t": 10676,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 10676,
+            "receivedAt": 10676
+          }
+        },
+        {
+          "move": "U'",
+          "t": 11185,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 11185,
+            "receivedAt": 11185
+          }
+        },
+        {
+          "move": "R'",
+          "t": 11693,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 11693,
+            "receivedAt": 11693
+          }
+        },
+        {
+          "move": "U'",
+          "t": 12202,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 12202,
+            "receivedAt": 12202
+          }
+        },
+        {
+          "move": "R2",
+          "t": 12710,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 12710,
+            "receivedAt": 12710
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-14",
+      "createdAt": "2023-11-14T22:20:20.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 12880,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 515,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 515,
+            "receivedAt": 515
+          }
+        },
+        {
+          "move": "D2",
+          "t": 1030,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 1030,
+            "receivedAt": 1030
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1546,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1546,
+            "receivedAt": 1546
+          }
+        },
+        {
+          "move": "B2",
+          "t": 2061,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 2061,
+            "receivedAt": 2061
+          }
+        },
+        {
+          "move": "R",
+          "t": 2576,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2576,
+            "receivedAt": 2576
+          }
+        },
+        {
+          "move": "U",
+          "t": 3091,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 3091,
+            "receivedAt": 3091
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3606,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3606,
+            "receivedAt": 3606
+          }
+        },
+        {
+          "move": "U'",
+          "t": 4122,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 4122,
+            "receivedAt": 4122
+          }
+        },
+        {
+          "move": "F",
+          "t": 4637,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4637,
+            "receivedAt": 4637
+          }
+        },
+        {
+          "move": "R",
+          "t": 5152,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 5152,
+            "receivedAt": 5152
+          }
+        },
+        {
+          "move": "U",
+          "t": 5667,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 5667,
+            "receivedAt": 5667
+          }
+        },
+        {
+          "move": "R'",
+          "t": 6182,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 6182,
+            "receivedAt": 6182
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6698,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 6698,
+            "receivedAt": 6698
+          }
+        },
+        {
+          "move": "F'",
+          "t": 7213,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 7213,
+            "receivedAt": 7213
+          }
+        },
+        {
+          "move": "R",
+          "t": 7728,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 7728,
+            "receivedAt": 7728
+          }
+        },
+        {
+          "move": "U'",
+          "t": 8243,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 8243,
+            "receivedAt": 8243
+          }
+        },
+        {
+          "move": "R",
+          "t": 8758,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 8758,
+            "receivedAt": 8758
+          }
+        },
+        {
+          "move": "U",
+          "t": 9274,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 9274,
+            "receivedAt": 9274
+          }
+        },
+        {
+          "move": "R",
+          "t": 9789,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 9789,
+            "receivedAt": 9789
+          }
+        },
+        {
+          "move": "U",
+          "t": 10304,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 10304,
+            "receivedAt": 10304
+          }
+        },
+        {
+          "move": "R",
+          "t": 10819,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 10819,
+            "receivedAt": 10819
+          }
+        },
+        {
+          "move": "U'",
+          "t": 11334,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 11334,
+            "receivedAt": 11334
+          }
+        },
+        {
+          "move": "R'",
+          "t": 11850,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 11850,
+            "receivedAt": 11850
+          }
+        },
+        {
+          "move": "U'",
+          "t": 12365,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 12365,
+            "receivedAt": 12365
+          }
+        },
+        {
+          "move": "R2",
+          "t": 12880,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 12880,
+            "receivedAt": 12880
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-15",
+      "createdAt": "2023-11-14T22:20:50.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 13050,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 522,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 522,
+            "receivedAt": 522
+          }
+        },
+        {
+          "move": "D2",
+          "t": 1044,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 1044,
+            "receivedAt": 1044
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1566,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1566,
+            "receivedAt": 1566
+          }
+        },
+        {
+          "move": "B2",
+          "t": 2088,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 2088,
+            "receivedAt": 2088
+          }
+        },
+        {
+          "move": "R",
+          "t": 2610,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2610,
+            "receivedAt": 2610
+          }
+        },
+        {
+          "move": "U",
+          "t": 3132,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 3132,
+            "receivedAt": 3132
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3654,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3654,
+            "receivedAt": 3654
+          }
+        },
+        {
+          "move": "U'",
+          "t": 4176,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 4176,
+            "receivedAt": 4176
+          }
+        },
+        {
+          "move": "F",
+          "t": 4698,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4698,
+            "receivedAt": 4698
+          }
+        },
+        {
+          "move": "R",
+          "t": 5220,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 5220,
+            "receivedAt": 5220
+          }
+        },
+        {
+          "move": "U",
+          "t": 5742,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 5742,
+            "receivedAt": 5742
+          }
+        },
+        {
+          "move": "R'",
+          "t": 6264,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 6264,
+            "receivedAt": 6264
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6786,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 6786,
+            "receivedAt": 6786
+          }
+        },
+        {
+          "move": "F'",
+          "t": 7308,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 7308,
+            "receivedAt": 7308
+          }
+        },
+        {
+          "move": "R",
+          "t": 7830,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 7830,
+            "receivedAt": 7830
+          }
+        },
+        {
+          "move": "U'",
+          "t": 8352,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 8352,
+            "receivedAt": 8352
+          }
+        },
+        {
+          "move": "R",
+          "t": 8874,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 8874,
+            "receivedAt": 8874
+          }
+        },
+        {
+          "move": "U",
+          "t": 9396,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 9396,
+            "receivedAt": 9396
+          }
+        },
+        {
+          "move": "R",
+          "t": 9918,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 9918,
+            "receivedAt": 9918
+          }
+        },
+        {
+          "move": "U",
+          "t": 10440,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 10440,
+            "receivedAt": 10440
+          }
+        },
+        {
+          "move": "R",
+          "t": 10962,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 10962,
+            "receivedAt": 10962
+          }
+        },
+        {
+          "move": "U'",
+          "t": 11484,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 11484,
+            "receivedAt": 11484
+          }
+        },
+        {
+          "move": "R'",
+          "t": 12006,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 12006,
+            "receivedAt": 12006
+          }
+        },
+        {
+          "move": "U'",
+          "t": 12528,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 12528,
+            "receivedAt": 12528
+          }
+        },
+        {
+          "move": "R2",
+          "t": 13050,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 13050,
+            "receivedAt": 13050
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-16",
+      "createdAt": "2023-11-14T22:21:20.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 13220,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 529,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 529,
+            "receivedAt": 529
+          }
+        },
+        {
+          "move": "D2",
+          "t": 1058,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 1058,
+            "receivedAt": 1058
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1586,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1586,
+            "receivedAt": 1586
+          }
+        },
+        {
+          "move": "B2",
+          "t": 2115,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 2115,
+            "receivedAt": 2115
+          }
+        },
+        {
+          "move": "R",
+          "t": 2644,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2644,
+            "receivedAt": 2644
+          }
+        },
+        {
+          "move": "U",
+          "t": 3173,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 3173,
+            "receivedAt": 3173
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3702,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3702,
+            "receivedAt": 3702
+          }
+        },
+        {
+          "move": "U'",
+          "t": 4230,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 4230,
+            "receivedAt": 4230
+          }
+        },
+        {
+          "move": "F",
+          "t": 4759,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4759,
+            "receivedAt": 4759
+          }
+        },
+        {
+          "move": "R",
+          "t": 5288,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 5288,
+            "receivedAt": 5288
+          }
+        },
+        {
+          "move": "U",
+          "t": 5817,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 5817,
+            "receivedAt": 5817
+          }
+        },
+        {
+          "move": "R'",
+          "t": 6346,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 6346,
+            "receivedAt": 6346
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6874,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 6874,
+            "receivedAt": 6874
+          }
+        },
+        {
+          "move": "F'",
+          "t": 7403,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 7403,
+            "receivedAt": 7403
+          }
+        },
+        {
+          "move": "R",
+          "t": 7932,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 7932,
+            "receivedAt": 7932
+          }
+        },
+        {
+          "move": "U'",
+          "t": 8461,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 8461,
+            "receivedAt": 8461
+          }
+        },
+        {
+          "move": "R",
+          "t": 8990,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 8990,
+            "receivedAt": 8990
+          }
+        },
+        {
+          "move": "U",
+          "t": 9518,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 9518,
+            "receivedAt": 9518
+          }
+        },
+        {
+          "move": "R",
+          "t": 10047,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 10047,
+            "receivedAt": 10047
+          }
+        },
+        {
+          "move": "U",
+          "t": 10576,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 10576,
+            "receivedAt": 10576
+          }
+        },
+        {
+          "move": "R",
+          "t": 11105,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 11105,
+            "receivedAt": 11105
+          }
+        },
+        {
+          "move": "U'",
+          "t": 11634,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 11634,
+            "receivedAt": 11634
+          }
+        },
+        {
+          "move": "R'",
+          "t": 12162,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 12162,
+            "receivedAt": 12162
+          }
+        },
+        {
+          "move": "U'",
+          "t": 12691,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 12691,
+            "receivedAt": 12691
+          }
+        },
+        {
+          "move": "R2",
+          "t": 13220,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 13220,
+            "receivedAt": 13220
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-17",
+      "createdAt": "2023-11-14T22:21:50.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 13390,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 536,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 536,
+            "receivedAt": 536
+          }
+        },
+        {
+          "move": "D2",
+          "t": 1071,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 1071,
+            "receivedAt": 1071
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1607,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1607,
+            "receivedAt": 1607
+          }
+        },
+        {
+          "move": "B2",
+          "t": 2142,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 2142,
+            "receivedAt": 2142
+          }
+        },
+        {
+          "move": "R",
+          "t": 2678,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2678,
+            "receivedAt": 2678
+          }
+        },
+        {
+          "move": "U",
+          "t": 3214,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 3214,
+            "receivedAt": 3214
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3749,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3749,
+            "receivedAt": 3749
+          }
+        },
+        {
+          "move": "U'",
+          "t": 4285,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 4285,
+            "receivedAt": 4285
+          }
+        },
+        {
+          "move": "F",
+          "t": 4820,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4820,
+            "receivedAt": 4820
+          }
+        },
+        {
+          "move": "R",
+          "t": 5356,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 5356,
+            "receivedAt": 5356
+          }
+        },
+        {
+          "move": "U",
+          "t": 5892,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 5892,
+            "receivedAt": 5892
+          }
+        },
+        {
+          "move": "R'",
+          "t": 6427,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 6427,
+            "receivedAt": 6427
+          }
+        },
+        {
+          "move": "U'",
+          "t": 6963,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 6963,
+            "receivedAt": 6963
+          }
+        },
+        {
+          "move": "F'",
+          "t": 7498,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 7498,
+            "receivedAt": 7498
+          }
+        },
+        {
+          "move": "R",
+          "t": 8034,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 8034,
+            "receivedAt": 8034
+          }
+        },
+        {
+          "move": "U'",
+          "t": 8570,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 8570,
+            "receivedAt": 8570
+          }
+        },
+        {
+          "move": "R",
+          "t": 9105,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 9105,
+            "receivedAt": 9105
+          }
+        },
+        {
+          "move": "U",
+          "t": 9641,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 9641,
+            "receivedAt": 9641
+          }
+        },
+        {
+          "move": "R",
+          "t": 10176,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 10176,
+            "receivedAt": 10176
+          }
+        },
+        {
+          "move": "U",
+          "t": 10712,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 10712,
+            "receivedAt": 10712
+          }
+        },
+        {
+          "move": "R",
+          "t": 11248,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 11248,
+            "receivedAt": 11248
+          }
+        },
+        {
+          "move": "U'",
+          "t": 11783,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 11783,
+            "receivedAt": 11783
+          }
+        },
+        {
+          "move": "R'",
+          "t": 12319,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 12319,
+            "receivedAt": 12319
+          }
+        },
+        {
+          "move": "U'",
+          "t": 12854,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 12854,
+            "receivedAt": 12854
+          }
+        },
+        {
+          "move": "R2",
+          "t": 13390,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 13390,
+            "receivedAt": 13390
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-18",
+      "createdAt": "2023-11-14T22:22:20.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 13560,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 542,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 542,
+            "receivedAt": 542
+          }
+        },
+        {
+          "move": "D2",
+          "t": 1085,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 1085,
+            "receivedAt": 1085
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1627,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1627,
+            "receivedAt": 1627
+          }
+        },
+        {
+          "move": "B2",
+          "t": 2170,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 2170,
+            "receivedAt": 2170
+          }
+        },
+        {
+          "move": "R",
+          "t": 2712,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2712,
+            "receivedAt": 2712
+          }
+        },
+        {
+          "move": "U",
+          "t": 3254,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 3254,
+            "receivedAt": 3254
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3797,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3797,
+            "receivedAt": 3797
+          }
+        },
+        {
+          "move": "U'",
+          "t": 4339,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 4339,
+            "receivedAt": 4339
+          }
+        },
+        {
+          "move": "F",
+          "t": 4882,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4882,
+            "receivedAt": 4882
+          }
+        },
+        {
+          "move": "R",
+          "t": 5424,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 5424,
+            "receivedAt": 5424
+          }
+        },
+        {
+          "move": "U",
+          "t": 5966,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 5966,
+            "receivedAt": 5966
+          }
+        },
+        {
+          "move": "R'",
+          "t": 6509,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 6509,
+            "receivedAt": 6509
+          }
+        },
+        {
+          "move": "U'",
+          "t": 7051,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 7051,
+            "receivedAt": 7051
+          }
+        },
+        {
+          "move": "F'",
+          "t": 7594,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 7594,
+            "receivedAt": 7594
+          }
+        },
+        {
+          "move": "R",
+          "t": 8136,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 8136,
+            "receivedAt": 8136
+          }
+        },
+        {
+          "move": "U'",
+          "t": 8678,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 8678,
+            "receivedAt": 8678
+          }
+        },
+        {
+          "move": "R",
+          "t": 9221,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 9221,
+            "receivedAt": 9221
+          }
+        },
+        {
+          "move": "U",
+          "t": 9763,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 9763,
+            "receivedAt": 9763
+          }
+        },
+        {
+          "move": "R",
+          "t": 10306,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 10306,
+            "receivedAt": 10306
+          }
+        },
+        {
+          "move": "U",
+          "t": 10848,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 10848,
+            "receivedAt": 10848
+          }
+        },
+        {
+          "move": "R",
+          "t": 11390,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 11390,
+            "receivedAt": 11390
+          }
+        },
+        {
+          "move": "U'",
+          "t": 11933,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 11933,
+            "receivedAt": 11933
+          }
+        },
+        {
+          "move": "R'",
+          "t": 12475,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 12475,
+            "receivedAt": 12475
+          }
+        },
+        {
+          "move": "U'",
+          "t": 13018,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 13018,
+            "receivedAt": 13018
+          }
+        },
+        {
+          "move": "R2",
+          "t": 13560,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 13560,
+            "receivedAt": 13560
+          }
+        }
+      ],
+      "quality": []
+    },
+    {
+      "id": "synthetic-19",
+      "createdAt": "2023-11-14T22:22:50.000Z",
+      "kind": "solve",
+      "source": "bluetooth",
+      "status": "complete",
+      "penalty": "",
+      "duration": 13730,
+      "initialState": "DDRDUURFDRFBLRRLUUFRBUFBFUBRLDDDRLDBLLULLBFRDUBFBBFLFU",
+      "cross": "U",
+      "session": "Session 1",
+      "stage": "solve",
+      "scramble": "R2 U R U R' U' R' U' R' U R' F U R U' R' F' U R U' R' B2 L2 D2 F2 R2",
+      "moves": [
+        {
+          "move": "R2",
+          "t": 0,
+          "serial": 0,
+          "raw": {
+            "cubeTimestamp": 0,
+            "receivedAt": 0
+          }
+        },
+        {
+          "move": "F2",
+          "t": 549,
+          "serial": 1,
+          "raw": {
+            "cubeTimestamp": 549,
+            "receivedAt": 549
+          }
+        },
+        {
+          "move": "D2",
+          "t": 1098,
+          "serial": 2,
+          "raw": {
+            "cubeTimestamp": 1098,
+            "receivedAt": 1098
+          }
+        },
+        {
+          "move": "L2",
+          "t": 1648,
+          "serial": 3,
+          "raw": {
+            "cubeTimestamp": 1648,
+            "receivedAt": 1648
+          }
+        },
+        {
+          "move": "B2",
+          "t": 2197,
+          "serial": 4,
+          "raw": {
+            "cubeTimestamp": 2197,
+            "receivedAt": 2197
+          }
+        },
+        {
+          "move": "R",
+          "t": 2746,
+          "serial": 5,
+          "raw": {
+            "cubeTimestamp": 2746,
+            "receivedAt": 2746
+          }
+        },
+        {
+          "move": "U",
+          "t": 3295,
+          "serial": 6,
+          "raw": {
+            "cubeTimestamp": 3295,
+            "receivedAt": 3295
+          }
+        },
+        {
+          "move": "R'",
+          "t": 3844,
+          "serial": 7,
+          "raw": {
+            "cubeTimestamp": 3844,
+            "receivedAt": 3844
+          }
+        },
+        {
+          "move": "U'",
+          "t": 4394,
+          "serial": 8,
+          "raw": {
+            "cubeTimestamp": 4394,
+            "receivedAt": 4394
+          }
+        },
+        {
+          "move": "F",
+          "t": 4943,
+          "serial": 9,
+          "raw": {
+            "cubeTimestamp": 4943,
+            "receivedAt": 4943
+          }
+        },
+        {
+          "move": "R",
+          "t": 5492,
+          "serial": 10,
+          "raw": {
+            "cubeTimestamp": 5492,
+            "receivedAt": 5492
+          }
+        },
+        {
+          "move": "U",
+          "t": 6041,
+          "serial": 11,
+          "raw": {
+            "cubeTimestamp": 6041,
+            "receivedAt": 6041
+          }
+        },
+        {
+          "move": "R'",
+          "t": 6590,
+          "serial": 12,
+          "raw": {
+            "cubeTimestamp": 6590,
+            "receivedAt": 6590
+          }
+        },
+        {
+          "move": "U'",
+          "t": 7140,
+          "serial": 13,
+          "raw": {
+            "cubeTimestamp": 7140,
+            "receivedAt": 7140
+          }
+        },
+        {
+          "move": "F'",
+          "t": 7689,
+          "serial": 14,
+          "raw": {
+            "cubeTimestamp": 7689,
+            "receivedAt": 7689
+          }
+        },
+        {
+          "move": "R",
+          "t": 8238,
+          "serial": 15,
+          "raw": {
+            "cubeTimestamp": 8238,
+            "receivedAt": 8238
+          }
+        },
+        {
+          "move": "U'",
+          "t": 8787,
+          "serial": 16,
+          "raw": {
+            "cubeTimestamp": 8787,
+            "receivedAt": 8787
+          }
+        },
+        {
+          "move": "R",
+          "t": 9336,
+          "serial": 17,
+          "raw": {
+            "cubeTimestamp": 9336,
+            "receivedAt": 9336
+          }
+        },
+        {
+          "move": "U",
+          "t": 9886,
+          "serial": 18,
+          "raw": {
+            "cubeTimestamp": 9886,
+            "receivedAt": 9886
+          }
+        },
+        {
+          "move": "R",
+          "t": 10435,
+          "serial": 19,
+          "raw": {
+            "cubeTimestamp": 10435,
+            "receivedAt": 10435
+          }
+        },
+        {
+          "move": "U",
+          "t": 10984,
+          "serial": 20,
+          "raw": {
+            "cubeTimestamp": 10984,
+            "receivedAt": 10984
+          }
+        },
+        {
+          "move": "R",
+          "t": 11533,
+          "serial": 21,
+          "raw": {
+            "cubeTimestamp": 11533,
+            "receivedAt": 11533
+          }
+        },
+        {
+          "move": "U'",
+          "t": 12082,
+          "serial": 22,
+          "raw": {
+            "cubeTimestamp": 12082,
+            "receivedAt": 12082
+          }
+        },
+        {
+          "move": "R'",
+          "t": 12632,
+          "serial": 23,
+          "raw": {
+            "cubeTimestamp": 12632,
+            "receivedAt": 12632
+          }
+        },
+        {
+          "move": "U'",
+          "t": 13181,
+          "serial": 24,
+          "raw": {
+            "cubeTimestamp": 13181,
+            "receivedAt": 13181
+          }
+        },
+        {
+          "move": "R2",
+          "t": 13730,
+          "serial": 25,
+          "raw": {
+            "cubeTimestamp": 13730,
+            "receivedAt": 13730
+          }
+        }
+      ],
+      "quality": []
+    }
+  ],
+  "preferences": {},
+  "stats": [],
+  "synthetic": true
+}

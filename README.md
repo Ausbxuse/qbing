@@ -1,3 +1,41 @@
+# Facet
+
+Native smart-cube timing, reconstruction, CFOP analysis and training. The Linux
+client is Rust/egui, the Android client is Kotlin/Compose, and the optional GNOME
+companion keeps a compact scramble and solve measurements in the top bar.
+This repository preserves the upstream csTimer web client and GPL history.
+
+## Install with Nix (Linux)
+
+From this checkout, install the app, desktop entry, login service and companion:
+
+```sh
+nix run .#install
+```
+
+Then run `facet` or open **Facet** from Applications. The GNOME companion needs
+one sign-out/sign-in after installation or an extension update. Closing the main
+window keeps Bluetooth tracking and the companion running; **Quit** or Ctrl+Q
+stops the app. The installer leaves an existing running process untouched.
+
+Installation uses a dedicated Nix profile at `$XDG_STATE_HOME/facet/profile`
+(default `~/.local/state/facet/profile`) and launchers in `~/.local/bin`. Existing
+settings and solves in `~/.config/cstimer-native` are preserved. The same command
+updates the installed profile; Nix retains previous generations for rollback.
+GNOME Shell 50 is supported. BlueZ must be enabled on the host.
+
+For the app alone, use `nix profile add .#facet`. To try it without installing,
+use `nix run .`. Build and run Rust tests with `nix build .#facet`; the package
+builds from source using the checked-in Cargo lock and vendoring hash. The
+companion and desktop integration are packaged separately from the compiled
+core so changing their presentation does not recompile Rust.
+
+Development and Android build instructions are in [NATIVE.md](NATIVE.md).
+The native app stores locally; authenticated sync is optional. Hardware cube
+validation is separate from the automated model, layout and lifecycle tests.
+
+---
+
 # csTimer
 
 Professional Speedcubing/Training Timer

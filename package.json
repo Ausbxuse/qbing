@@ -1,0 +1,22 @@
+{
+  "name": "cstimer-local",
+  "private": true,
+  "version": "0.1.0",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "build": "node scripts/build-local.mjs",
+    "start": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.cjs",
+    "app": "node scripts/launch.mjs",
+    "test:browser": "node scripts/browser-interface.mjs",
+    "test:browser:classic": "node scripts/browser-smoke.mjs",
+    "preview:interface": "node scripts/preview-interface.mjs",
+    "test:browser:review": "node scripts/browser-review-workspace.mjs",
+    "test:browser:performance": "node scripts/browser-performance.mjs",
+    "profile:interface": "node scripts/profile-interface.mjs",
+    "test:browser:cache": "node scripts/browser-cache-upgrade.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "1.64.1"
+  }
+}

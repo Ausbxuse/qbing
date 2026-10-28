@@ -1,0 +1,179 @@
+/* Additive typography only. Window geometry, timer behavior, and theme colors
+   remain controlled by csTimer. Disable in Options > Display. */
+@font-face {
+	font-family: 'csLocalGeist';
+	src: url('../fonts/Geist-Medium.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'csLocalGeist';
+	src: url('../fonts/Geist-Regular.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'csLocalGeist';
+	src: url('../fonts/Geist-SemiBold.ttf') format('truetype');
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'csLocalMono';
+	src: url('../fonts/GeistMono-Variable.woff2') format('woff2');
+	font-style: normal;
+	font-weight: 100 900;
+	font-display: swap;
+}
+
+body.local-appearance,
+.local-appearance input:not(.icon),
+.local-appearance select,
+.local-appearance textarea,
+.local-appearance button,
+.local-appearance .mywindow,
+.local-appearance .dialog,
+.local-appearance .popup,
+.local-appearance .tab,
+.local-appearance #avgstr,
+.local-appearance #timer .difflabel,
+.local-appearance #rtimer .difflabel,
+.local-appearance #leftbar > div,
+.local-appearance .dialog .title {
+	font-family: 'csLocalGeist', Arial, sans-serif;
+	font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* Numeric roles use a real medium weight, with csTimer still formatting the
+   value and honoring the small-decimals preference. Size follows its controls. */
+.local-appearance #lcd,
+.local-appearance #multiphase {
+	font-family: 'csLocalMono', monospace !important;
+	font-weight: 500;
+	font-variant-numeric: tabular-nums lining-nums;
+	font-feature-settings: normal;
+	letter-spacing: normal;
+}
+
+.local-appearance #lcd {
+	font-size: var(--local-clock-size, 96px);
+	line-height: 1.15;
+}
+
+.local-appearance #container > #avgstr {
+	font-family: 'csLocalMono', monospace;
+	font-size: var(--local-average-size, 16px);
+	line-height: 1.65;
+}
+
+.local-appearance #avgstr,
+.local-appearance .difflabel {
+	font-weight: 400;
+}
+
+.local-appearance #leftbar #logo {
+	font-family: 'csLocalGeist', Arial, sans-serif;
+	font-size: 2.5em;
+	font-weight: 600;
+	letter-spacing: -0.035em;
+}
+
+.local-appearance .dialog .title,
+.local-appearance .tab {
+	font-weight: 600;
+}
+
+/* Limit the monospace face to notation, preserving normal selectors and tool
+   statistics. csTimer continues to paint completed/current scramble turns. */
+.local-appearance #scrambleTxt {
+	font-family: 'csLocalGeist', Arial, sans-serif;
+	font-size: var(--local-scramble-size, 30px) !important;
+	font-weight: 500;
+	font-variant-ligatures: none;
+	letter-spacing: -.025em;
+}
+
+.local-appearance.local-mono-scramble #scrambleTxt {
+	font-family: 'csLocalMono', monospace;
+}
+
+.local-appearance #stats select,
+.local-appearance #stats input,
+.local-appearance #stats .session,
+.local-appearance #stats > .title,
+.local-appearance #scrambleDiv > .title,
+.local-appearance #scrambleDiv select,
+.local-appearance #toolsDiv select,
+.local-appearance #toolsDiv > div,
+.local-appearance #scrambleDiv input {
+	font-size: var(--local-text-size, 14px);
+}
+
+.local-appearance #scrambleDiv > .title {
+	font-family: 'csLocalGeist', Arial, sans-serif;
+}
+
+.local-appearance #stats table,
+.local-appearance #stats .statc,
+.local-appearance #stats .sumtable {
+	font-family: 'csLocalMono', monospace;
+	font-weight: 400;
+	font-size: var(--local-text-size, 14px);
+	line-height: 1.5;
+}
+
+.local-appearance #stats .statc > div,
+.local-appearance #stats table th {
+	font-size: var(--local-text-size, 14px);
+	font-weight: 500;
+}
+
+/* Upstream tool content is 1.5em monospace (1.2em on phones). Use the same
+   readable scale as its controls so reconstruction stays below the averages. */
+.local-appearance #toolsDiv > div > div {
+	font-family: 'csLocalGeist', Arial, sans-serif;
+	font-size: var(--local-text-size, 14px);
+	font-variant-numeric: tabular-nums lining-nums;
+}
+
+.local-appearance #toolsDiv .sol {
+	font-family: 'csLocalMono', monospace;
+}
+
+.local-appearance input:focus-visible,
+.local-appearance select:focus-visible,
+.local-appearance textarea:focus-visible,
+.local-appearance button:focus-visible,
+.local-appearance [tabindex]:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 2px;
+}
+
+.local-appearance .dialog,
+.local-appearance .popup,
+.local-appearance .tab {
+	border-style: solid;
+}
+
+/* Keep the existing mobile logo cell and bar dimensions. */
+.m .local-appearance #leftbar #logo {
+	font-size: 2.1em;
+}
+
+@media (max-width: 600px) {
+	.local-appearance #lcd {
+		font-size: var(--local-clock-phone-size, 48px);
+	}
+	.local-appearance #scrambleTxt {
+		font-size: var(--local-scramble-phone-size, 24px) !important;
+	}
+	.local-appearance #container > #avgstr {
+		font-size: var(--local-text-size, 14px);
+	}
+}

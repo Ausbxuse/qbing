@@ -1,0 +1,20 @@
+[Unit]
+Description=Facet smart-cube background service
+Documentation=file:@DOCUMENTATION@
+PartOf=graphical-session.target
+After=graphical-session.target
+StartLimitIntervalSec=30
+StartLimitBurst=3
+
+[Service]
+Type=dbus
+BusName=org.cstimer.Native.Companion
+ExecStart="@LAUNCHER@" --daemon
+ExecStop="@LAUNCHER@" --quit
+Restart=on-failure
+RestartSec=3
+TimeoutStartSec=30
+TimeoutStopSec=10
+
+[Install]
+WantedBy=graphical-session.target

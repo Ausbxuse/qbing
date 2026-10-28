@@ -1,0 +1,31 @@
+/* Follow the stock average block's layout, visibility, and theme. */
+#local-average-metrics {
+	margin-top: .6em;
+	font-size: clamp(11px, .55em, 14px);
+	font-weight: normal;
+	font-variant-numeric: tabular-nums;
+	line-height: 1.6;
+}
+
+.local-appearance #local-average-metrics {
+	font-size: var(--local-text-size, 14px);
+}
+
+/* Match upstream average links above the timer's full-screen touch surface.
+   Raise only the text, keeping the surrounding timer area usable. */
+#local-average-metrics .local-average-row > span {
+	position: relative;
+	z-index: 20;
+	opacity: .75;
+}
+
+#local-average-metrics .local-average-row {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	column-gap: .8em;
+}
+
+#local-average-metrics .local-average-name {
+	opacity: .8;
+}

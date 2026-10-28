@@ -1,0 +1,35 @@
+import { spawnSync } from 'node:child_process';
+import { readFile, writeFile, mkdir, cp, rename, chmod } from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root = fileURLToPath(new URL('..', import.meta.url));
+const metadata = spawnSync('cargo', ['metadata', '--manifest-path', 'companion/Cargo.toml', '--no-deps', '--format-version', '1'], { cwd: root, encoding: 'utf8' });
+if (metadata.status !== 0) throw new Error(metadata.stderr || 'Run in nix develop');
+const source = path.join(JSON.parse(metadata.stdout).target_directory, 'release/cstimer-companion');
+const data = process.env.XDG_DATA_HOME || path.join(os.homedir(), '.local/share');
+const dest = path.join(data, 'cstimer-local');
+await mkdir(path.join(dest, 'bin'), { recursive: true });
+await cp(source, path.join(dest, 'bin/companion-new'));
+await chmod(path.join(dest, 'bin/companion-new'), 0o755);
+await rename(path.join(dest, 'bin/companion-new'), path.join(dest, 'bin/cstimer-companion'));
+await mkdir(path.join(dest, 'licenses'), { recursive: true });
+await cp(path.join(root, 'companion/assets/OFL-maple.txt'), path.join(dest, 'licenses/OFL-maple.txt'));
+await cp(path.join(root, 'LICENSE'), path.join(dest, 'licenses/GPL-3.0.txt'));
+const libraries = process.env.LD_LIBRARY_PATH || '';
+await writeFile(path.join(dest, 'companion-runtime.json'), JSON.stringify({ libraries }, null, 2));
+const linked = spawnSync('ldd', [source], { encoding: 'utf8' }).stdout || '';
+const stores = new Set((libraries + ':' + linked + ':' + process.execPath).match(/\/nix\/store\/[^/:\s]+/g) || []);
+await mkdir(path.join(dest, 'runtime-roots'), { recursive: true });
+for (const store of stores) {
+ const result = spawnSync('nix-store', ['--add-root', path.join(dest, 'runtime-roots', path.basename(store)), '--indirect', '--realise', store], { stdio: 'ignore' });
+ if (result.status !== 0) throw new Error('Could not retain native runtime ' + store);
+}
+const bin = path.join(os.homedir(), '.local/bin'); await mkdir(bin, { recursive: true });
+const quote = s => "'" + s.replaceAll("'", "'\\''") + "'";
+const launcher = path.join(bin, 'cstimer-companion');
+await writeFile(launcher, '#!/bin/sh\nexec ' + quote(process.execPath) + ' ' + quote(path.join(root, 'scripts/launch-companion.mjs')) + ' "$@"\n');
+await chmod(launcher, 0o755);
+await mkdir(path.join(data, 'applications'), { recursive: true });
+await writeFile(path.join(data, 'applications/cstimer-companion.desktop'), '[Desktop Entry]\nType=Application\nName=Cube Companion\nComment=Compact live csTimer widget\nExec=' + launcher + '\nIcon=cstimer-local\nTerminal=false\nCategories=Education;Sports;\n');
+console.log('Installed Cube Companion and ' + launcher);

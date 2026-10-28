@@ -1,0 +1,18 @@
+import { mkdir, writeFile, chmod, cp } from 'node:fs/promises';
+import os from 'node:os';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+const root = fileURLToPath(new URL('..', import.meta.url));
+const bin = path.join(os.homedir(), '.local/bin');
+const data = process.env.XDG_DATA_HOME || path.join(os.homedir(), '.local/share');
+const quote = value => "'" + value.replaceAll("'", "'\\''") + "'";
+await mkdir(bin, { recursive: true });
+const launcher = path.join(bin, 'cstimer-local');
+await writeFile(launcher, `#!/bin/sh\nexec ${quote(process.execPath)} ${quote(path.join(root, 'scripts/launch.mjs'))} "$@"\n`);
+await chmod(launcher, 0o755);
+await mkdir(path.join(data, 'applications'), { recursive: true });
+await mkdir(path.join(data, 'icons/hicolor/512x512/apps'), { recursive: true });
+await cp(path.join(root, 'dist/cstimer512x512.png'), path.join(data, 'icons/hicolor/512x512/apps/cstimer-local.png'));
+const desktopQuote = value => '"' + value.replaceAll('\\', '\\\\').replaceAll('"', '\\"').replaceAll('`', '\\`').replaceAll('$', '\\$') + '"';
+await writeFile(path.join(data, 'applications/cstimer-local.desktop'), `[Desktop Entry]\nType=Application\nName=csTimer Local\nComment=Local csTimer fork\nExec=${desktopQuote(launcher)}\nIcon=cstimer-local\nTerminal=false\nCategories=Education;Sports;\n`);
+console.log(`Installed ${launcher} and csTimer Local application-menu entry.`);

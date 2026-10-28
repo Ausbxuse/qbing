@@ -505,6 +505,7 @@ var cross = (function(createMove, edgeMove, createPrun, setNPerm, getNPerm, Cnk,
 
 	return {
 		solve: solve_cross,
+		solveXCross: solve_xcross,
 		getEasyCross: getEasyCross,
 		getEasyXCross: getEasyXCross
 	}

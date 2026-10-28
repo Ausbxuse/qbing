@@ -1,3 +1,14 @@
 /dist
 /.idea
 cstimer.iml
+/.local-build/
+/.data/
+/node_modules/
+/companion/target/
+/native/linux/target/
+/native/.gradle/
+/native/.kotlin/
+/native/**/build/
+/native/local.properties
+/native/solver/build/
+/native/build/

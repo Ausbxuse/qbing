@@ -1,0 +1,5 @@
+Studio Small 09, by Sergej Majboroda / Poly Haven.
+Source: https://polyhaven.com/a/studio_small_09
+Download: https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/1k/studio_small_09_1k.hdr
+License: CC0 1.0 Universal. https://polyhaven.com/license
+RGBELoader.js is from Three.js r170, under the MIT license retained in vendor/three/LICENSE.

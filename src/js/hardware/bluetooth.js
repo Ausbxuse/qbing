@@ -132,6 +132,8 @@ function BtDeviceGroupFactory() {
 				}
 				return cube.init(device);
 			});
+		}).catch(function(error) {
+			return stop(true).then(function() { return Promise.reject(error); });
 		});
 	}
 
@@ -166,10 +168,19 @@ function BtDeviceGroupFactory() {
 		if (!_device) {
 			return Promise.resolve();
 		}
-		return Promise.resolve(cube && cube.clear(isHardwareEvent)).then(function () {
-			_device.removeEventListener('gattserverdisconnected', onDisconnect);
-			_device.gatt.disconnect();
-			_device = null;
+		// Release connection state before protocol cleanup: adapter shutdown can
+		// make cleanup reject, and must never leave a ghost-connected device.
+		var device = _device;
+		var model = cube;
+		_device = null;
+		cube = undefined;
+		device.removeEventListener('gattserverdisconnected', onDisconnect);
+		return Promise.resolve().then(function() {
+			return model && model.clear(isHardwareEvent);
+		}).catch(function() {
+			giikerutil.log('[bluetooth] protocol cleanup ended after disconnect');
+		}).then(function () {
+			if (device.gatt && device.gatt.connected) device.gatt.disconnect();
 		});
 	}
 

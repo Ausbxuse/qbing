@@ -240,7 +240,15 @@ var giikerutil = execMain(function(CubieCube) {
 			connectClick.html(deviceName).unbind('click').click(disconnect);
 			drawState();
 		} else {
-			connectClick.html(TOOLS_GIIKER + '<br>' + GIIKER_CONNECT).unbind('click').click(init);
+			connectClick.html(TOOLS_GIIKER + '<br>' + GIIKER_CONNECT).unbind('click').click(function () {
+				// The tool's Connect action should also select Bluetooth timing.
+				// Switching input uses csTimer's existing explicit connection dialog.
+				if (kernel.getProp('input') != 'g') {
+					kernel.setProp('input', 'g');
+				} else {
+					init();
+				}
+			});
 		}
 		debugClick.unbind('click').click(debugInfo.showDialog);
 	}
@@ -416,6 +424,7 @@ var giikerutil = execMain(function(CubieCube) {
 		}
 		callback(retState, prevMoves, lastTs, curPuzzle);
 		scrHinter.checkState(curCubie, curPuzzle);
+		kernel.pushSignal('localcube', [retState, prevMoves, lastTs, curPuzzle]);
 	}
 
 	function tsLinearFit(moveTsList, inv) {
@@ -795,6 +804,10 @@ var giikerutil = execMain(function(CubieCube) {
 	}
 
 	return {
+		getViewState: function() {
+			return { facelets: hackedSolvedCubieInv ? hackedCubie.toFaceCube() : curState,
+				connected: GiikerCube.isConnected(), name: deviceName || '', puzzle: curPuzzle };
+		},
 		setCallback: function(func) {
 			callback = func;
 		},

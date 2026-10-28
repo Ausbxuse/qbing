@@ -1,0 +1,8 @@
+{
+  "uuid": "cstimer-companion@local",
+  "name": "Facet Companion",
+  "description": "Live scramble, time, TPS and move count from the Rust Facet app. Uses the local session bus; no Bluetooth connection of its own.",
+  "shell-version": ["50"],
+  "version": 7,
+  "session-modes": ["user"]
+}
