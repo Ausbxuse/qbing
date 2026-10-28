@@ -17,8 +17,21 @@
   fontconfig,
   freetype,
   runCommand,
+  writeShellScript,
+  mesa,
 }:
 let
+  launcher = writeShellScript "qbing-launch" ''
+    # NixOS supplies host drivers here. Other distributions need a matching
+    # Nix Mesa closure instead of loading their incompatible system libraries.
+    if [ ! -e /etc/NIXOS ] && [ ! -d /run/opengl-driver ]; then
+      export __EGL_VENDOR_LIBRARY_FILENAMES=${mesa}/share/glvnd/egl_vendor.d/50_mesa.json''${__EGL_VENDOR_LIBRARY_FILENAMES:+:$__EGL_VENDOR_LIBRARY_FILENAMES}
+      export LIBGL_DRIVERS_PATH=${mesa}/lib/dri''${LIBGL_DRIVERS_PATH:+:$LIBGL_DRIVERS_PATH}
+      export GBM_BACKENDS_PATH=${mesa}/lib/gbm''${GBM_BACKENDS_PATH:+:$GBM_BACKENDS_PATH}
+      export LD_LIBRARY_PATH=${mesa}/lib''${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}
+    fi
+    exec ${core}/bin/cstimer-native "$@"
+  '';
   core = rustPlatform.buildRustPackage {
     pname = "qbing-core";
     version = "0.1.0";
@@ -81,7 +94,7 @@ runCommand "qbing-${core.version}"
   }
   ''
       mkdir -p $out/bin $out/share/applications $out/share/icons/hicolor/scalable/apps $out/share/gnome-shell/extensions/cstimer-companion@local $out/lib/systemd/user $out/share/doc/qbing $out/share/licenses/qbing
-      ln -s ${core}/bin/cstimer-native $out/bin/cstimer-native
+      ln -s ${launcher} $out/bin/cstimer-native
       ln -s cstimer-native $out/bin/qbing
       makeWrapper $out/bin/cstimer-native $out/bin/qbing-companion --add-flags --companion
       ln -s qbing-companion $out/bin/cstimer-companion

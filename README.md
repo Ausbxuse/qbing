@@ -7,6 +7,10 @@ This repository preserves the upstream csTimer web client and GPL history.
 
 ## Install with Nix (Linux)
 
+On non-NixOS desktops without `/run/opengl-driver`, the packaged launcher supplies
+its matching Mesa drivers for OpenGL (including AMD and Intel integrated graphics).
+NixOS and hosts with configured Nix graphics drivers keep using their host drivers.
+
 From this checkout, install the app, desktop entry, login service and companion:
 
 ```sh
