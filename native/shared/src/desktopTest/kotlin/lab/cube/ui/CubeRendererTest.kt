@@ -40,7 +40,7 @@ class CubeRendererTest {
         }
     }
     @Test fun gyroSnapResetForgetsHysteresisWithoutChangingLogicalTurns(){
-        val snap=CubeOrientationSnap();val animator=CubeTurnAnimator(Cube.solved)
+        val snap=CubeOrientationSnap();val animator=CubeTurnAnimator(Cube.solved,baseTurnDurationNanos=130_000_000L)
         animator.enqueue(Cube.turn(Cube.solved,"R"),"R");animator.advance(0)
         snap.update(axisRotation(1,90f));snap.reset()
         assertTrue(snap.selected.closeTo(CubeQuaternion()))
@@ -50,8 +50,29 @@ class CubeRendererTest {
         val pose=axisRotation(2,90f);val antipodal=CubeQuaternion(-pose.x,-pose.y,-pose.z,-pose.w)
         assertTrue(snap.update(antipodal).closeTo(pose))
     }
-    @Test fun animationCarriesElapsedTimeAcrossQueuedTurns(){
+    @Test fun liveTurnRespondsOnTheFirstFrameAndFinishesWithinEightyMilliseconds(){
+        val animator=CubeTurnAnimator(Cube.solved)
+        val end=Cube.turn(Cube.solved,"R")
+        animator.enqueue(end,"R");animator.advance(0)
+        val firstFrame=animator.advance(16_000_000)
+        assertTrue(abs(firstFrame.angle)>PI.toFloat()*.2f,"A received turn should move visibly on the first display frame")
+        assertEquals(Cube.solved,animator.state,"Keep the logical start state until the visual endpoint")
+        animator.advance(80_000_000)
+        assertEquals(end,animator.state);assertFalse(animator.busy)
+    }
+    @Test fun fastLiveTurnsStayCloseToTheDeviceWithoutDroppingEndpoints(){
         val animator=CubeTurnAnimator(Cube.solved);var state=Cube.solved
+        val moves=List(30){listOf("R","U","F'","L2","D","B'")[it%6]}
+        for((i,move)in moves.withIndex()){
+            state=Cube.turn(state,move);animator.enqueue(state,move,i*40.0)
+            animator.advance(i*40_000_000L)
+            animator.advance(i*40_000_000L+16_000_000L)
+        }
+        animator.advance(29*40_000_000L+160_000_000L)
+        assertEquals(state,animator.state);assertFalse(animator.busy,"Animation must catch up within 160ms after a 25 TPS stream")
+    }
+    @Test fun animationCarriesElapsedTimeAcrossQueuedTurns(){
+        val animator=CubeTurnAnimator(Cube.solved,baseTurnDurationNanos=130_000_000L);var state=Cube.solved
         val moves=listOf("R","U","R'","U'")
         for(move in moves){state=Cube.turn(state,move);animator.enqueue(state,move)}
         animator.advance(0)
@@ -64,7 +85,7 @@ class CubeRendererTest {
     }
     @Test fun trustedOppositeInverseTurnsAnimateTogetherOnAllAxesAndOrders(){
         for(moves in listOf(listOf("R","L'"),listOf("L'","R"),listOf("U'","D"),listOf("D","U'"),listOf("F","B'"),listOf("B'","F"))){
-            val animator=CubeTurnAnimator(Cube.solved);var state=Cube.solved
+            val animator=CubeTurnAnimator(Cube.solved,baseTurnDurationNanos=130_000_000L);var state=Cube.solved
             for((i,move)in moves.withIndex()){state=Cube.turn(state,move);animator.enqueue(state,move,1000.0+i*35)}
             animator.advance(0)
             val pose=animator.advance(65_000_000)
@@ -78,7 +99,7 @@ class CubeRendererTest {
     @Test fun slowRecoveredMissingClockAndSameDirectionTurnsStaySequential(){
         data class Case(val second:String="L'",val gap:Double?=101.0,val firstRecovered:Boolean=false,val secondRecovered:Boolean=false)
         for(case in listOf(Case(),Case(gap=null),Case(gap=30.0,firstRecovered=true),Case(gap=30.0,secondRecovered=true),Case(gap=-1.0),Case(gap=Double.NaN),Case(second="L",gap=30.0),Case(second="U'",gap=30.0))){
-            val animator=CubeTurnAnimator(Cube.solved)
+            val animator=CubeTurnAnimator(Cube.solved,baseTurnDurationNanos=130_000_000L)
             val first=Cube.turn(Cube.solved,"R");val final=Cube.turn(first,case.second)
             animator.enqueue(first,"R",1000.0,case.firstRecovered)
             animator.enqueue(final,case.second,case.gap?.let{1000+it},case.secondRecovered)
@@ -89,7 +110,7 @@ class CubeRendererTest {
         }
     }
     @Test fun latePartnerJoinsWithoutJumpingEitherLayerAndSharesTheEndpoint(){
-        val animator=CubeTurnAnimator(Cube.solved)
+        val animator=CubeTurnAnimator(Cube.solved,baseTurnDurationNanos=130_000_000L)
         val first=Cube.turn(Cube.solved,"R");val final=Cube.turn(first,"L'")
         animator.enqueue(first,"R",1000.0);animator.advance(0)
         val before=animator.advance(40_000_000)
@@ -105,7 +126,7 @@ class CubeRendererTest {
         assertEquals(final,animator.state);assertFalse(animator.busy)
     }
     @Test fun repeatedPairedQuarterTurnsKeepRawM2EndpointAndFrameOvershoot(){
-        val animator=CubeTurnAnimator(Cube.solved);var state=Cube.solved
+        val animator=CubeTurnAnimator(Cube.solved,baseTurnDurationNanos=130_000_000L);var state=Cube.solved
         val moves=listOf("R","L'","R","L'")
         for((i,move)in moves.withIndex()){state=Cube.turn(state,move);animator.enqueue(state,move,1000.0+i*20)}
         assertEquals("L'",animator.advance(0).partnerMove)
@@ -117,7 +138,7 @@ class CubeRendererTest {
     }
     @Test fun noninterleavedM2BurstUsesTwoPairedMotionsAndEachRawTurnOnce(){
         for(moves in listOf(listOf("R","R","L'","L'"),listOf("L'","L'","R","R"),listOf("U'","U'","D","D"),listOf("F","F","B'","B'"))){
-            val animator=CubeTurnAnimator(Cube.solved);var rawState=Cube.solved
+            val animator=CubeTurnAnimator(Cube.solved,baseTurnDurationNanos=130_000_000L);var rawState=Cube.solved
             for((i,move)in moves.withIndex()){rawState=Cube.turn(rawState,move);animator.enqueue(rawState,move,1000.0+i*20)}
             val first=animator.advance(0)
             assertEquals(moves[0],first.move);assertEquals(moves[2],first.partnerMove)
@@ -129,7 +150,7 @@ class CubeRendererTest {
         }
     }
     @Test fun activeTurnFindsLatePartnerAcrossOnlyItsSameAxisQueue(){
-        val animator=CubeTurnAnimator(Cube.solved);var rawState=Cube.turn(Cube.solved,"R")
+        val animator=CubeTurnAnimator(Cube.solved,baseTurnDurationNanos=130_000_000L);var rawState=Cube.turn(Cube.solved,"R")
         animator.enqueue(rawState,"R",1000.0);animator.advance(0)
         val before=animator.advance(35_000_000)
         for((i,move)in listOf("R","L'","L'").withIndex()){rawState=Cube.turn(rawState,move);animator.enqueue(rawState,move,1020.0+i*20)}
@@ -144,7 +165,7 @@ class CubeRendererTest {
     @Test fun pairedSearchCannotCrossAxisClockRecoveryOrSlowBarriers(){
         data class Barrier(val move:String="R",val time:Double?=1020.0,val recovered:Boolean=false,val lastTime:Double=1040.0)
         for(barrier in listOf(Barrier(move="U"),Barrier(time=null),Barrier(recovered=true),Barrier(time=999.0),Barrier(time=1120.0,lastTime=1140.0))){
-            val animator=CubeTurnAnimator(Cube.solved);var state=Cube.turn(Cube.solved,"R")
+            val animator=CubeTurnAnimator(Cube.solved,baseTurnDurationNanos=130_000_000L);var state=Cube.turn(Cube.solved,"R")
             animator.enqueue(state,"R",1000.0);animator.advance(0)
             state=Cube.turn(state,barrier.move);animator.enqueue(state,barrier.move,barrier.time,barrier.recovered)
             state=Cube.turn(state,"L'");animator.enqueue(state,"L'",barrier.lastTime)
@@ -168,7 +189,7 @@ class CubeRendererTest {
         for(i in verticesPerXBlock until verticesPerXBlock*2)assertEquals(resting[i],vertices[i],.00001f,"Center frame is not replaced with a literal slice turn")
     }
     @Test fun authoritativeStateClearsStaleAnimation(){
-        val animator=CubeTurnAnimator(Cube.solved)
+        val animator=CubeTurnAnimator(Cube.solved,baseTurnDurationNanos=130_000_000L)
         animator.enqueue(Cube.turn(Cube.solved,"R"),"R");animator.advance(0)
         val corrected=Cube.turn(Cube.solved,"U2");animator.enqueue(corrected,null)
         assertNull(animator.advance(50_000_000).move);assertEquals(corrected,animator.state)

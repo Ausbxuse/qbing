@@ -24,7 +24,7 @@ private data class ActiveVisualTurn(val first:TurnFrame,var partner:TurnFrame?=n
 internal val cubeTurnSpecs=mapOf('R' to (0 to 1),'L' to (0 to -1),'U' to (1 to 1),'D' to (1 to -1),'F' to (2 to 1),'B' to (2 to -1))
 
 /** Event states remain authoritative; elapsed time carries across queued turns. */
-internal class CubeTurnAnimator(initial:String) {
+internal class CubeTurnAnimator(initial:String,private val baseTurnDurationNanos:Long=70_000_000L) {
     private val queue=ArrayDeque<TurnFrame>()
     private var active:ActiveVisualTurn?=null
     private var started=0L
@@ -72,7 +72,8 @@ internal class CubeTurnAnimator(initial:String) {
     private fun angle(move:String,t:Float):Float {
         val side=cubeTurnSpecs.getValue(move[0]).second
         val turns=if(move.endsWith('2'))2 else if(move.endsWith('\''))-1 else 1
-        val eased=t*t*t*(t*(t*6-15)+10)
+        // Sensor events arrive after the physical turn: move immediately, then settle.
+        val eased=1-(1-t)*(1-t)*(1-t)
         return -side*turns*PI.toFloat()/2*eased
     }
     fun advance(now:Long):CubeTurnPose {
@@ -97,7 +98,7 @@ internal class CubeTurnAnimator(initial:String) {
             if(queue.isEmpty())return CubeTurnPose()
             val next=queue.removeFirst()
             val partner=takePartner(next)
-            active=ActiveVisualTurn(next,partner);started=nextStart;duration=(130_000_000.0/(1+queue.size*.45)).toLong().coerceAtLeast(24_000_000L)
+            active=ActiveVisualTurn(next,partner);started=nextStart;duration=(baseTurnDurationNanos.toDouble()/(1+queue.size*.45)).toLong().coerceAtLeast(16_000_000L)
         }
     }
 }

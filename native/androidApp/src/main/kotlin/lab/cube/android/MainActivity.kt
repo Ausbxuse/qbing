@@ -50,7 +50,7 @@ class MainActivity:ComponentActivity() {
                     else -> controller.page="Practice"
                 }
             }
-            SideEffect {WindowInsetsControllerCompat(window,window.decorView).isAppearanceLightStatusBars=controller.settings.theme=="paper";WindowInsetsControllerCompat(window,window.decorView).isAppearanceLightNavigationBars=controller.settings.theme=="paper";if(controller.active!=null)window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON) else window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)}
+            SideEffect {WindowInsetsControllerCompat(window,window.decorView).isAppearanceLightStatusBars=controller.settings.theme=="paper";WindowInsetsControllerCompat(window,window.decorView).isAppearanceLightNavigationBars=controller.settings.theme=="paper"}
             Box(Modifier.fillMaxSize().background(if(controller.settings.theme=="paper")Color(0xfffcfcfd)else Color(0xff17191d)).systemBarsPadding()){
                 CubeApp(controller,onExport={text->exportText=text;exportLauncher.launch("cstimer-native-backup.json")},onImport={kind->importKind=kind;importLauncher.launch(arrayOf("application/json","text/plain","application/octet-stream"))})
             }
@@ -61,8 +61,8 @@ class MainActivity:ComponentActivity() {
         if(required.all{ContextCompat.checkSelfPermission(this,it)==PackageManager.PERMISSION_GRANTED})return true
         val pending=CompletableDeferred<Boolean>();permissionResult=pending;permissionLauncher.launch(required);return pending.await()
     }
-    override fun onStart(){super.onStart();if(::controller.isInitialized)controller.foreground=true}
-    override fun onStop(){super.onStop();if(::controller.isInitialized)controller.foreground=false;if(::controller.isInitialized&&controller.active!=null)controller.cancel("app-backgrounded")}
+    override fun onStart(){super.onStart();window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);if(::controller.isInitialized)controller.foreground=true}
+    override fun onStop(){window.clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);super.onStop();if(::controller.isInitialized)controller.foreground=false;if(::controller.isInitialized&&controller.active!=null)controller.cancel("app-backgrounded")}
     override fun onDestroy(){if(::controller.isInitialized)controller.close();super.onDestroy()}
 }
 

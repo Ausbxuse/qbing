@@ -250,3 +250,10 @@ scramble token is complete, the cube is connected, and timing has not started;
 partial, recovery, running, stale, and disconnected states clear it. This adds
 no text or width to the panel. The Shell workflow test checks row positions and
 Pango baselines through partial/second-row cursors and completion transitions.
+
+Android 0.1.1 keeps the screen awake for the whole foreground Activity, including
+scrambling and inspection, and clears the window flag when backgrounded. It does
+not acquire a wake lock or force brightness. Live cube turns use a 70ms base
+animation with immediate ease-out and faster queued turns (16ms minimum), while
+raw device timestamps, solve timing, and reconstruction playback timing remain
+unchanged. Queued-turn tests cover a sustained 25 TPS stream and exact endpoints.
